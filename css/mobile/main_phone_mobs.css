@@ -133,7 +133,7 @@
     }
 
     .recommend-banner .banner-text strong {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .recommend-banner .banner-text p {
@@ -152,11 +152,36 @@
         display: none;
     }
 
+    .rec-grid {
+        gap: 5px;
+    }
+
     .rec-card {
-        height: 150px;
+        border-radius: 5px;
+        height: 110px;
+        border: none;
     }
 
     .rec-info h3 {
+        font-size: 8px;
+        margin-top: -10px;
+    }
+
+    .rec-info p {
+        display: none;
+    }
+
+    .rec-info span {
+        display: none;
+    }
+
+    .btn--black {
+        height: 30px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .rec-info {
         margin-top: -5px;
         font-size: 10px;
     }
@@ -196,43 +221,317 @@
     }
 
     .footer-block {
-        flex: 1;
-        min-width: 80px;
+        min-width: 70px;
     }
 
     .footer-block a {
-        width: 100%;
-        font-size: 7px;
+        font-size: 6px;
+        width: 80px;
+        height: 25px;
+        padding: 0;
         margin-bottom: 1px;
     }
 
-    .footer-text-column {
-        font-size: 8px;
+    .footer-info p {
+        font-size: 6px;
+        margin-bottom: -15px;
+        margin-top: -15px;
     }
 
     .footer-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        font-size: 5px;
+        width: 100%;
+        gap: 0;
     }
 
+    .footer-bottom-part {
+        padding-bottom: 0;
+    }
+
+    .footer-column-left{
+        gap: 0;
+        width: 75%;
+    }
     .footer-column-left span {
-        margin-top: -28px;
         font-size: 5px;
+        width: 20%;
+        margin-top: -15px;
+    }
+
+    .footer-column-left a {
+        font-size: 5px;
+        width: 40%;
+        margin: 0;
+    }
+
+    .footer-column-left a:last-child {
+        font-size: 5px;
+        margin: 0;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+
+    .social-icons a {
+        height: 25px;
+        width: 25px;
+        margin: 0;
+    }
+
+    .footer-products {
+        padding-top: 0;
     }
 
     .footer-products-left {
-        margin-top: -60px;
-        font-size: 5px;
+        justify-content: flex-start;
+        width: 60%;
+        height: 10px;
+        margin: 0;
     }
 
-    .footer-products-right span {
-        font-size: 8px;
+    .footer-products-left a {
+        margin: 0;
+        margin-right: 4px;
+        font-size: 6px;
+    }
+
+    .footer-products-left a:last-child {
+        margin: 0;
+    }
+
+    .footer-products-right {
+        justify-content: flex-end;
+        width: 40%;
+        height: 10px;
+    }
+
+    .yandex-brand {
+        height: 20px;
+        position: relative;
+    }
+
+    .yandex-brand span {
+        font-size: 6px;
+        height: 10px;
+        color: #666666;
+    }
+
+    .yandex-logo-link img {
+        height: 10px;
+        width: 25px;
+    }
+
+    .yandex-logo-link a {
+        height: 20px;
+        margin: 0;
     }
 }
 
+@media (min-width: 376px) and (max-width: 400px){
+    header .topbar {
+        padding-top: 0;
+    }
+
+    header .logo {
+        font-size: 15px;
+        margin-left: -5px;
+        margin-right: 10px;
+    }
+
+    header .search input[type="text"] {
+        width: 150px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .topbar__inner {
+        justify-content: flex-start;
+    }
+
+    .actions {
+        height: 30px;
+    }
+
+    .actions .btn--outline {
+        height: 20px;
+        width: 35px;
+        font-size: 10px;
+        line-height: 7px;
+        margin-bottom: -13px;
+        padding-left: 2px;
+    }
+
+    .actions .btn--primary {
+        margin-left: -5px;
+        width: 110px;
+        height: 20px;
+        font-size: 7px;
+        margin-bottom: -13px;
+        text-align: center;
+    }
+    .footer {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .footer-content {
+        margin-left: -5px;
+        gap: 5px;
+    }
+
+    .footer-content {
+        width: 20px;
+    }
+
+    .footer-block {
+        min-width: 90px;
+    }
+
+    .footer-block a {
+        font-size: 6px;
+        width: 80px;
+        height: 25px;
+        padding: 0;
+        margin-bottom: 1px;
+    }
+
+    .footer-info p {
+        font-size: 6px;
+        margin-bottom: -15px;
+        margin-top: -15px;
+    }
+
+    .footer-row {
+        width: 100%;
+        gap: 0;
+    }
+
+    .footer-column-left {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 25px;
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .footer-column-right {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        height: 25px;
+        gap: 0;
+    }
+
+    .footer-products-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .footer-bottom-part {
+        padding-bottom: 0;
+    }
+
+    .footer-column-left span {
+        font-size: 5px;
+        width: 20%;
+        margin-top: -15px;
+    }
+
+    .footer-column-left a {
+        font-size: 5px;
+        width: 40%;
+        margin: 0;
+    }
+
+    .footer-column-left a:last-child {
+        font-size: 5px;
+        margin: 0;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+
+    .social-icons a {
+        height: 25px;
+        width: 25px;
+        margin: 0;
+    }
+
+    .recommend-banner {
+        height: 40px;
+        background: #0000001a;
+        padding: 10px 10px;
+        margin-top: -10px;
+    }
+
+    .recommend-banner img {
+        width: 60px;
+        margin-left: -8px;
+    }
+
+    .recommend-banner .banner-text strong {
+        font-size: 8px;
+    }
+
+    .recommend-banner .banner-text p {
+        font-size: 6px;
+        color: black;
+    }
+
+    .footer-products {
+        padding-top: 0;
+    }
+
+    .footer-products-left {
+        justify-content: flex-start;
+        width: 60%;
+        height: 10px;
+        margin: 0;
+    }
+
+    .footer-products-left a {
+        margin: 0;
+        margin-right: 4px;
+        font-size: 6px;
+    }
+
+    .footer-products-left a:last-child {
+        margin: 0;
+    }
+
+    .footer-products-right {
+        justify-content: flex-end;
+        width: 40%;
+        height: 10px;
+    }
+
+    .yandex-brand {
+        height: 20px;
+        position: relative;
+    }
+
+    .yandex-brand span {
+        font-size: 6px;
+        height: 10px;
+        color: #666666;
+    }
+
+    .yandex-logo-link img {
+        height: 10px;
+        width: 25px;
+    }
+
+    .yandex-logo-link a {
+        height: 20px;
+        margin: 0;
+    }
+}
 
 @media (max-width: 375px) {
     html, body {
