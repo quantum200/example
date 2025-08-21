@@ -12,7 +12,7 @@
         font-size: 20px;
         margin-left: 10px;
     }
-    .search input{
+    header .search input{
         width: 100px;
         height: 29px;
     }
@@ -67,6 +67,9 @@
     }
     .categories1{
         height: 30px;
+    }
+    .container{
+        max-width: 600px;
     }
     .container1 a{
         margin-top: -10px;
@@ -187,6 +190,9 @@
 
 
 @media (max-width: 768px) {
+}
+
+@media (max-width: 320px) {
     html, body {
         width: 100%;
         min-width: 100%;
@@ -195,45 +201,53 @@
         box-sizing: border-box;
         overflow-x: hidden;
     }
-
-    .logo{
-        font-size: 20px;
-        margin-left: 10px;
-    }
-    .search input{
-        width: 350px;
-        height: 29px;
-    }
-    .first{
-        display: none;
-    }
-    .second{
-        display: none;
-    }
-    .third{
-        display: none;
-    }
-    .fourth{
-        display: none;
-    }
-    .fifth{
-        display: none;
-    }
-    .brands h2{
-        font-size: 14px;
-    }
-    .actions .btn--outline{
+    header .logo{
         font-size: 15px;
-        margin-bottom: -10px;
+        margin-left: -5px;
+        margin-right: 10px;
+    }
+    header .search input[type="text"]{
+        width: 100px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .topbar__inner{
+        justify-content: flex-start;
+    }
+    .actions{
+        height: 30px;
+    }
+    .actions .btn--outline {
+        height: 20px;
+        width: 35px;
+        font-size: 10px;
+        line-height: 7px;
+        margin-bottom: -13px;
+        padding-left: 2px;
     }
     .actions .btn--primary{
+        margin-left: -5px;
+        width: 100px;
+        height: 20px;
+        font-size: 6px;
+        margin-bottom: -13px;
         text-align: center;
-        font-size: 10px;
-        color: white;
-        width: 140px;
+    }
+    .categories .container{
+        margin-top: -10px;
+        height: 20px;
+        text-align: center;
+    }
+    .categories{
+        height: 20px;
+    }
+    .categories a{
+        text-align: center;
+        height: 10px;
+        margin-top: -3px;
+        font-size: 4px;
     }
 }
-
 /* Ноутбуки */
 @media (max-width: 1280px) {
     body { font-size: 18px; }
