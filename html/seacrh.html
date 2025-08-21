@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто.ру: — Поиск</title>
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+    <div class="container topbar__inner">
+        <div class="logo">auto.ru</div>
+        <div class="search">
+            <input type="text" placeholder="Поиск по объявлениям">
+        </div>
+        <div class="actions">
+            <a href="#">Избранное</a>
+            <a href="#">Поиски</a>
+            <a href="#">Сравнения</a>
+            <a href="#">Сообщения</a>
+            <a href="#">Я продаю</a>
+            <a href="#" class="btn btn--outline">Войти</a>
+            <a href="#" class="btn btn--primary">Разместить объявление</a>
+        </div>
+    </div>
+</header>
+
+<div class="categories1">
+    <div class="container1">
+        <a href="#">Легковые</a>
+        <a href="#">Коммерческие</a>
+        <a href="#">Электро</a>
+        <a href="#">Китайские</a>
+        <a href="#">Мото</a>
+        <a href="#">Отчёты</a>
+        <a href="#">Кредиты</a>
+        <a href="#">Оценка авто</a>
+        <a href="#">Страховки</a>
+        <a href="#">Гараж</a>
+        <a href="#">Журнал</a>
+        <a href="#">Для бизнеса</a>
+    </div>
+</div>
+
+<nav class="categories">
+    <div class="container">
+        <div class="filter-row-top">
+            <a href="#" class="filter-link active">Все</a>
+            <a href="#" class="filter-link">Новое</a>
+            <a href="#" class="filter-link">С пробегом</a>
+        </div>
+        <div class="filter-columns">
+            <div class="column">
+                <div class="dropdown">
+                    <select>
+                        <option value="">Марка</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="ford">Ford</option>
+                        <option value="honda">Honda</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="kia">Kia</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes-Benz</option>
+                        <option value="audi">Audi</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="volvo">Volvo</option>
+                    </select>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option value="">Кузов</option>
+                        <option value="sedan">Седан</option>
+                        <option value="hatchback">Хэтчбек</option>
+                        <option value="suv">Внедорожник</option>
+                    </select>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="range-dropdown">
+                    <div class="dropdown">
+                        <select>
+                            <option value="">Объем от, л</option>
+                            <option value="1.0">1.0</option>
+                            <option value="1.6">1.6</option>
+                            <option value="2.0">2.0</option>
+                        </select>
+                        <span class="dropdown-icon">▼</span>
+                    </div>
+                    <div class="dropdown">
+                        <select>
+                            <option value="">Объем до, л</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2.0">2.0</option>
+                            <option value="2.5">2.5</option>
+                        </select>
+                        <span class="dropdown-icon">▼</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="dropdown">
+                    <select>
+                        <option value="">Модель</option>
+                        <option value="camry">Camry</option>
+                        <option value="golf">Golf</option>
+                        <option value="focus">Focus</option>
+                        <option value="civic">Civic</option>
+                        <option value="qashqai">Qashqai</option>
+                        <option value="tucson">Tucson</option>
+                        <option value="sportage">Sportage</option>
+                        <option value="3-series">3 Series</option>
+                        <option value="c-class">C-Class</option>
+                        <option value="a4">A4</option>
+                        <option value="cx-5">CX-5</option>
+                        <option value="forester">Forester</option>
+                        <option value="outlander">Outlander</option>
+                        <option value="xc60">XC60</option>
+                    </select>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option value="">Коробка</option>
+                        <option value="manual">Механика</option>
+                        <option value="automatic">Автомат</option>
+                    </select>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option value="">Цена, р</option>
+                        <option value="500000">До 500 000</option>
+                        <option value="1000000">До 1 000 000</option>
+                        <option value="2000000">До 2 000 000</option>
+                    </select>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="range-dropdown">
+                    <div class="dropdown">
+                        <select>
+                            <option value="">Год от</option>
+                            <option value="2015">2015</option>
+                            <option value="2020">2020</option>
+                            <option value="2010">2010</option>
+                        </select>
+                        <span class="dropdown-icon">▼</span>
+                    </div>
+                    <div class="dropdown">
+                        <select>
+                            <option value="">До</option>
+                            <option value="2019">2019</option>
+                            <option value="2023">2023</option>
+                            <option value="2014">2014</option>
+                        </select>
+                        <span class="dropdown-icon">▼</span>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option value="">Двигатель</option>
+                        <option value="petrol">Бензин</option>
+                        <option value="diesel">Дизель</option>
+                        <option value="hybrid">Гибрид</option>
+                    </select>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option value="">Пробег, км</option>
+                        <option value="100000">До 100 000</option>
+                        <option value="200000">До 200 000</option>
+                    </select>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="filter-dropdown" id="filterDropdown">
+            <div class="dropdown-content">
+                <div class="initial-rows">
+                    <div class="filter-row" style="display: flex; align-items: center;">
+                        <h1>Данные из отчётов</h1>
+                        <span class="new-badge">Новое</span>
+                    </div>
+                    <div class="filter-row" style="display: flex; gap: 10px; border-bottom: 1px solid #ccc; justify-content: space-between; width: 100%;">
+                        <div style="flex: 1;"><input type="checkbox" id="no-accident"><label for="no-accident">Без ДТП</label></div>
+                        <div style="flex: 1;"><input type="checkbox" id="pts-match"><label for="pts-match">Параметры совпадают с ПТС</label></div>
+                        <div style="flex: 1;"><input type="checkbox" id="owners-match"><label for="owners-match">Владельцы совпадают с ПТС</label></div>
+                        <div style="flex: 1;"><input type="checkbox" id="no-restrictions"><label for="no-restrictions">Нет юридических ограничений</label></div>
+                    </div>
+                </div>
+                <div class="filter-columns">
+                    <div class="filter-column">
+                        <div class="filter-row" style="display: flex; gap: 10px;">
+                            <div class="split-input">
+                                <input type="text" placeholder="Мощность от, л.с." style="border-radius: 10px 0 0 10px;">
+                                <input type="text" placeholder="до" style="border-radius: 0 10px 10px 0;">
+                            </div>
+                        </div>
+                        <div class="filter-row" style="display: flex; gap: 10px; width: 100%;">
+                            <div class="split-input" style="display: flex; width: 100%;">
+                                <input type="text" placeholder="Багажник от, л" style="border-radius: 10px 0 0 10px; flex: 1;">
+                                <select style="border-radius: 0 10px 10px 0; flex: 1;">
+                                    <option>Неважно</option>
+                                    <option>В наличии</option>
+                                    <option>На заказ</option>
+                                    <option>В пути</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter-row filter-row-top" style="display: flex; gap: 10px; flex-wrap: nowrap; overflow-x: auto; background: #e0e0e0; padding: 5px; border-radius: 20px; width: 100%; min-width: 0; flex: 1 1 auto;">
+                            <span>Неважно</span>
+                            <span>Частник</span>
+                            <span>Компания</span>
+                        </div>
+                        <div class="filter-row">
+                            <select style="width: 100%; border-radius: 10px;">
+                                <option>Время размещения</option>
+                                <option>За все время</option>
+                                <option>За сутки</option>
+                                <option>За 2 дня</option>
+                                <option>За 3 дня</option>
+                                <option>За неделю</option>
+                                <option>За 2 недели</option>
+                                <option>За 3 недели</option>
+                                <option>За месяц</option>
+                            </select>
+                        </div>
+                        <div class="filter-row" style="display: flex; flex-direction: column; flex-wrap: nowrap; overflow-x: auto; gap: 10px;">
+                            <div style="display: flex; margin-left: 0; align-self: flex-start; gap: 5px;">
+                                <input type="checkbox" id="no-rf-mileage"><label for="no-rf-mileage">Без пробега по РФ</label>
+                            </div>
+                            <div style="display: flex; margin-left: 0; align-self: flex-start; gap: 5px;">
+                                <input type="checkbox" id="show-discounts"><label for="show-discounts">Показать скидки</label>
+                            </div>
+                            <div style="display: flex; margin-left: 0; align-self: flex-start; gap: 5px;">
+                                <input type="checkbox" id="online-show"><label for="online-show">Онлайн показ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-column">
+                        <div class="filter-row">
+                            <div class="split-input">
+                                <input type="text" placeholder="Разгон от, с" style="border-radius: 10px 0 0 10px;">
+                                <input type="text" placeholder="до" style="border-radius: 0 10px 10px 0;">
+                            </div>
+                        </div>
+                        <div class="filter-row" style="display: flex; gap: 5px;">
+                            <div class="color-circle" style="background: black;"></div>
+                            <div class="color-circle" style="background: #fff; border: 1px solid #000;"></div>
+                            <div class="color-circle" style="background: grey;"></div>
+                            <div class="color-circle" style="background: red;"></div>
+                            <div class="color-circle" style="background: blue;"></div>
+                            <div class="color-circle" style="background: green;"></div>
+                            <div class="color-circle" style="background: #8b4513;"></div>
+                            <div class="color-circle" style="background: yellow;"></div>
+                            <div class="color-circle" style="background: pink"></div>
+                            <div class="color-circle" style="background: lightblue;"></div>
+                            <div class="color-circle" style="background: orange;"></div>
+                        </div>
+                        <div class="filter-row">
+                            <select style="width: 100%; border-radius: 10px;" onchange="this.style.color='#000'; if(this.value) this.style.color='#000';">
+                                <option value="" selected>Кол-во владельцев</option>
+                                <option>1 владелец</option>
+                                <option>Не более 2 владельцев</option>
+                                <option>Не более 3 владельцев</option>
+                                <option>Любое количество владельцев</option>
+                            </select>
+                        </div>
+                        <div class="filter-row">
+                            <select style="width: 100%; border-radius: 10px;">
+                                <option>Тип разъёма для зарядки</option>
+                                <option>Type 1</option>
+                                <option>Type 2</option>
+                                <option>CCS</option>
+                            </select>
+                        </div>
+                        <div class="filter-row" style="display: flex; flex-direction: column; flex-wrap: nowrap; overflow-x: auto; gap: 10px;">
+                            <div style="display: flex; margin-left: 0; align-self: flex-start; gap: 5px;">
+                                <input type="checkbox" id="manufacturer-checked"><label for="manufacturer-checked">Проверено производителем</label>
+                            </div>
+                            <div style="display: flex; margin-left: 0; align-self: flex-start; gap: 5px;">
+                                <input type="checkbox" id="vat-sale"><label for="vat-sale">Продажа с НДС</label>
+                            </div>
+                            <div style="display: flex; margin-left: 0; align-self: flex-start; gap: 5px;">
+                                <input type="checkbox" id="panorama"><label for="panorama">С панорамой</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-column">
+                        <div class="filter-row">
+                            <div class="split-input">
+                                <input type="text" placeholder="Расход до, л" style="border-radius: 10px 0 0 10px;">
+                                <input type="text" placeholder="Клиренс от, мм" style="border-radius: 0 10px 10px 0;">
+                            </div>
+                        </div>
+                        <div class="filter-row" style="display: flex; gap: 10px;">
+                            <select style="width: 100%; border-radius: 10px;">
+                                <option>Состояние</option>
+                                <option>Неважно</option>
+                                <option>Кроме битых</option>
+                                <option>Битые / не на ходу</option>
+                            </select>
+                            <select style="width: 100%; border-radius: 10px;">
+                                <option>Таможня</option>
+                                <option>Неважно</option>
+                                <option>Растаможен</option>
+                                <option>Не растаможен</option>
+                            </select>
+                        </div>
+                        <div class="filter-row" style="display: flex; gap: 10px;">
+                            <select style="width: 100%; border-radius: 10px;">
+                                <option>Владение</option>
+                                <option>Не важно</option>
+                                <option>До года</option>
+                                <option>От 1 до 3 лет</option>
+                                <option>От 3 лет и более</option>
+                            </select>
+                            <select style="width: 100%; border-radius: 10px;">
+                                <option>Руль</option>
+                                <option>Неважно</option>
+                                <option>Левый</option>
+                                <option>Правый</option>
+                            </select>
+                        </div>
+                        <div class="filter-row" style="display: flex; flex-direction: row; flex-wrap: nowrap; overflow-x: auto; gap: 10px;">
+                            <div style="display: flex; flex-direction: column; flex: 1; gap: 10px;">
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <input type="checkbox" id="original-pts"><label for="original-pts">Оригинал ПТС</label>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <input type="checkbox" id="trade-in"><label for="trade-in">Обмен</label>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <input type="checkbox" id="with-photos"><label for="with-photos">С фото</label>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex: 1; gap: 10px;">
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <input type="checkbox" id="warranty"><label for="warranty">На гарантии</label>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <input type="checkbox" id="credit"><label for="credit">В кредит</label>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <input type="checkbox" id="with-video"><label for="with-video">С видео</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-row fourth-row" style="border-bottom: 1px solid #ccc; display: flex; gap: 10px; flex-wrap: wrap; width: 100%; padding-bottom: 10px;">
+                    <button class="filter-tag">Компактный</button>
+                    <button class="filter-tag">Средний размер</button>
+                    <button class="filter-tag">Большой</button>
+                    <button class="filter-tag">Комфортный</button>
+                    <button class="filter-tag">Просторный задний ряд</button>
+                    <button class="filter-tag" id="more-tags" onclick="toggleHiddenTags()">+13</button>
+                    <div class="hidden-tags" id="hiddenTags">
+                        <button class="filter-tag">Вместительный багажник</button>
+                        <button class="filter-tag">Негабаритный груз</button>
+                        <button class="filter-tag">Проходимый</button>
+                        <button class="filter-tag">Бездорожье</button>
+                        <button class="filter-tag">Быстрый</button>
+                        <button class="filter-tag">Хорошая управляемость</button>
+                        <button class="filter-tag">Спортивный</button>
+                        <button class="filter-tag">Экономичный</button>
+                        <button class="filter-tag">Ликвидный</button>
+                        <button class="filter-tag">Большой набор опций</button>
+                        <button class="filter-tag">Престижный</button>
+                        <button class="filter-tag">Стильный</button>
+                        <button class="filter-tag">Новинка</button>
+                    </div>
+                </div>
+
+                <div class="safety-block">
+                    <div class="safety-title">Безопасность</div>
+                    <div class="safety-content">
+                        <div class="safety-columns">
+                            <div class="safety-column">
+                                <select class="safety-select">
+                                    <option>Подушки безопасности</option>
+                                    <option>Неважно</option>
+                                    <option>Водителя</option>
+                                    <option>Пассажира</option>
+                                    <option>Центральная</option>
+                                    <option>Боковые передние</option>
+                                    <option>Боковые задние</option>
+                                    <option>Оконные (шторки)</option>
+                                    <option>Коленей водителя</option>
+                                    <option>Коленей пассажира</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="tire-pressure">
+                                    <label for="tire-pressure">Датчик давления в шинах</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="abs">
+                                    <label for="abs">Антиблокировочная система (ABS)</label>
+                                </div>
+                            </div>
+                            <div class="safety-column">
+                                <select class="safety-select">
+                                    <option>Вспомогательные системы</option>
+                                    <option>Неважно</option>
+                                    <option>Предупреждение о столкновении</option>
+                                    <option>Предотвращения столкновения</option>
+                                    <option>Обнаружения пешеходов</option>
+                                    <option>Предупреждения о выезде из полосы</option>
+                                    <option>Удержание в полосе</option>
+                                    <option>Ассистент движения в пробке</option>
+                                    <option>Датчик усталости водителя</option>
+                                    <option>Распознавание дорожных знаков</option>
+                                    <option>Антипробуксировочная (ASR)</option>
+                                    <option>Стабилизации рулевого управления (VSM)</option>
+                                    <option>Распределения тормозных усилий (BAS; EBD)</option>
+                                    <option>Помощи при старте в гору</option>
+                                    <option>Помощи при спуске</option>
+                                    <option>Контроля слепых зон</option>
+                                    <option>Помощи при выезде с парковки задним ходом</option>
+                                    <option>Ночного видения</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="esp">
+                                    <label for="esp">Система стабилизации (ESP)</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="child-locks">
+                                    <label for="child-locks">Блокировки замков задних дверей</label>
+                                </div>
+                            </div>
+                            <div class="safety-column">
+                                <select class="safety-select">
+                                    <option>Система крепления Isofix</option>
+                                    <option>Неважно</option>
+                                    <option>Задний ряд</option>
+                                    <option>Передний ряд</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="era-glonass">
+                                    <label for="era-glonass">ЭРА-ГЛОНАСС</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="armored-body">
+                                    <label for="armored-body">Бронированный кузов</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comfort-block">
+                    <div class="comfort-title">Комфорт</div>
+                    <div class="comfort-content">
+                        <div class="comfort-columns">
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Кондиционер</option>
+                                    <option>Неважно</option>
+                                    <option>Климат-контроль 1-зонный</option>
+                                    <option>Климат-контроль 2-зонный</option>
+                                    <option>Климат-контроль многозонный</option>
+                                    <option>Кондиционер</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Круиз-контроль</option>
+                                    <option>Неважно</option>
+                                    <option>Адаптивный круз-контроль</option>
+                                    <option>Круиз-контроль</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Система помощи при парковке</option>
+                                    <option>Неважно</option>
+                                    <option>Система автоматической парковки</option>
+                                    <option>Парктроник передний</option>
+                                    <option>Парктроник задний</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="seat-heating">
+                                    <label for="seat-heating">Проекционный дисплей</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="climate-control">
+                                    <label for="climate-control">Система выбора режима движения</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="distant">
+                                    <label for="climate-control">Дистанционный запуск двигателя</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="bag">
+                                    <label for="climate-control">Открытие багажника без помощи рук</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="kol">
+                                    <label for="climate-control">Мультифункциональное рулевое колесо</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="panel">
+                                    <label for="climate-control">Электронная приборная панель</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Камера</option>
+                                    <option>Неважно</option>
+                                    <option>360°</option>
+                                    <option>Передняя</option>
+                                    <option>Заданяя</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Регулировка руля</option>
+                                    <option>Неважно</option>
+                                    <option>По высоте</option>
+                                    <option>По вылету</option>
+                                    <option>Электрорегулировка</option>
+                                    <option>С памятью положения</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="keyless-entry">
+                                    <label for="keyless-entry">Система доступа без ключа</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="panoramic-roof">
+                                    <label for="panoramic-roof">Запуск двигателя с кнопки</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="otopit">
+                                    <label for="panoramic-roof">Программируемый предпусковой отопитель</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="elekrto">
+                                    <label for="panoramic-roof">Электропривод крышки багажника</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="zerkalo">
+                                    <label for="panoramic-roof">Электроскладывание зеркал</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="pam">
+                                    <label for="panoramic-roof">Память боковых зеркал</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Электростеклоподъемники</option>
+                                    <option>Неважно</option>
+                                    <option>Передние</option>
+                                    <option>Задние</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Усилитель руля</option>
+                                    <option>Неважно</option>
+                                    <option>Усилитель руля</option>
+                                    <option>Активный усилитель руля</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="lepestki">
+                                    <label for="lepestki">Подрулевые лепестки переключения передач</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="uzel">
+                                    <label for="uzel">Регулируемый педальный узел</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="start">
+                                    <label for="start">Система "старт-стоп"</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="privod">
+                                    <label for="privod">Электропривод зеркал</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="dver">
+                                    <label for="dver">Доводчик дверей</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="multimedia-block">
+                    <div class="multimedia-title">Мультимедиа</div>
+                    <div class="multimedia-content">
+                        <div class="multimedia-columns">
+                            <div class="comfort-column">
+                                <select class="comfort-select1">
+                                    <option>Аудиосистема</option>
+                                    <option>Неважно</option>
+                                    <option>Премиальная аудиосистема</option>
+                                    <option>Аудиосистема</option>
+                                    <option>Аудиоподготвка</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="rus">
+                                    <label for="rus">Русифицированное меню</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="zhk">
+                                    <label for="zhk">Мультимедиа система с ЖК-экраном</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="zadpas">
+                                    <label for="zadpas">Мультимедиа система для задних пассажиров</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="dist">
+                                    <label for="dist">Дистанционное управление автомобилем</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="bezprovod">
+                                    <label for="bezprovod">Беспроводная зарядка для смартфона</label>
+                                </div>
+                            </div>
+
+                            <div class="comfort-column">
+                                <div class="placeholder-select"></div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="usb">
+                                    <label for="usb">USB</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="navigation">
+                                    <label for="navigation">Навигационная система</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="voice">
+                                    <label for="voice">Голосовое управление</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="android">
+                                    <label for="android">Android Auto</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="carplay">
+                                    <label for="carplay">CarPlay</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <div class="placeholder-select"></div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="yandex">
+                                    <label for="yandex">Яндекс Авто</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="aux">
+                                    <label for="aux">AUX</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="bluetooth">
+                                    <label for="bluetooth">Bluetooth</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="12v">
+                                    <label for="12v">Розетка 12V</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="220v">
+                                    <label for="220v">Розетка 220V</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="obzor-block">
+                    <div class="obzor-title">Обзор</div>
+                    <div class="obzor-content">
+                        <div class="obzor-columns">
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Фары</option>
+                                    <option>Неважно</option>
+                                    <option>Ксеноновые/биксеноновые</option>
+                                    <option>Лазерные</option>
+                                    <option>Светодиотные</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="faru">
+                                    <label for="faru">Противотуманные фары</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="light">
+                                    <label for="light">Адаптивное освещение</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="rain">
+                                    <label for="rain">Датчик дождя</label>
+                                </div>
+                            </div>
+
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Электрообогрев</option>
+                                    <option>Неважно</option>
+                                    <option>Зоны стеклоочистителей</option>
+                                    <option>Лобового стекла</option>
+                                    <option>Боковых зеркал</option>
+                                    <option>Форсунок стеклоомывателей</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="datchik_light">
+                                    <label for="datchik_light">Датчик света</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="faru_den">
+                                    <label for="faru_den">Дневные ходовые огни</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="correct">
+                                    <label for="correct">Автоматический корректор фар</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <div class="placeholder-select"></div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="auto_light">
+                                    <label for="auto_light">Автоматический дальний свет</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="wash">
+                                    <label for="wash">Омыватель фар</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="dark">
+                                    <label for="dark">Самозатемняющееся зеркало заднего вида</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element-block">
+                    <div class="element-title">Элементы экстерьера</div>
+                    <div class="element-content">
+                        <div class="element-columns">
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Тип дисков</option>
+                                    <option>Неважно</option>
+                                    <option>Стальные</option>
+                                    <option>Легкосплавные</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="paint">
+                                    <label for="paint">Двухцветная окраска кузова</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="obves">
+                                    <label for="obves">Обвес кузова</label>
+                                </div>
+                            </div>
+
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Размер дисков</option>
+                                    <option>Неважно</option>
+                                    <option>Диски 12"</option>
+                                    <option>Диски 13"</option>
+                                    <option>Диски 14"</option>
+                                    <option>Диски 15"</option>
+                                    <option>Диски 16"</option>
+                                    <option>Диски 17"</option>
+                                    <option>Диски 18"</option>
+                                    <option>Диски 19"</option>
+                                    <option>Диски 20"</option>
+                                    <option>Диски 21"</option>
+                                    <option>Диски 22"</option>
+                                    <option>Диски 23"</option>
+                                    <option>Диски 24"</option>
+                                    <option>Диски 25"</option>
+                                    <option>Диски 26"</option>
+                                    <option>Диски 27"</option>
+                                    <option>Диски 28"</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="rayling">
+                                    <label for="rayling">Рейлинги на крыше</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="aerographia">
+                                    <label for="aerographia">Аэрография</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <div class="placeholder-select"></div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="decorate">
+                                    <label for="decorate">Декоративные молдинги</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="safe-block">
+                    <div class="safe-title">Защита от угона</div>
+                    <div class="safe-content">
+                        <div class="safe-columns">
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Сигнализация</option>
+                                    <option>Неважно</option>
+                                    <option>Сигнализация с обратной связью</option>
+                                    <option>Сигнализация</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="lock">
+                                    <label for="lock">Центральный замок</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <div class="placeholder-select"></div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="datchik_capacity">
+                                    <label for="datchik_capacity">Датчик проникновения в салон (датчик объема)</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <div class="placeholder-select"></div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="immobilaze">
+                                    <label for="immobilaze">Иммобилайзер</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="salon-block">
+                    <div class="salon-title">Салон</div>
+                    <div class="salon-content">
+                        <div class="salon-columns">
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Салон</option>
+                                    <option>Неважно</option>
+                                    <option>Светлый</option>
+                                    <option>Темный</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Материал салона</option>
+                                    <option>Неважно</option>
+                                    <option>Велюр</option>
+                                    <option>Комбинированный</option>
+                                    <option>Искусственная кожа</option>
+                                    <option>Алькантара</option>
+                                    <option>Кожа</option>
+                                    <option>Ткань</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Регулировка сидений по высоте</option>
+                                    <option>Неважно</option>
+                                    <option>Сиденья водителя</option>
+                                    <option>Передних сидений</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="pered">
+                                    <label for="pered">Спортивные передние сиденья</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="luke">
+                                    <label for="luke">Люк</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="panoramak">
+                                    <label for="panoramak">Панорамная крыша / лобовое стекло</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="massage">
+                                    <label for="massage">Сиденья с массажем</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="heating">
+                                    <label for="heating">Обогрев рулевого кресла</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="skin">
+                                    <label for="skin">Отделка кожей рулевого кресла</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="kpp">
+                                    <label for="kpp">Отделка кожей рычага КПП</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="black">
+                                    <label for="black">Отделка потолка черного цвета</label>
+                                </div>
+
+                            </div>
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Электрорегулировка сидений</option>
+                                    <option>Неважно</option>
+                                    <option>Сиденья водителя</option>
+                                    <option>Передних сидений</option>
+                                    <option>Задних сидений</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Сиденья с поддержкой поясниц</option>
+                                    <option>Неважно</option>
+                                    <option>Сиденье водителя с поясничной поддержкой</option>
+                                    <option>Передние водителя с поясничной поддержкой</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Подогрев сидений</option>
+                                    <option>Неважно</option>
+                                    <option>Передних сидений</option>
+                                    <option>Задних сидений</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="zad">
+                                    <label for="zad">Задний подлокотник</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="sid">
+                                    <label for="sid">Третий ряд сидений</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="zadsed">
+                                    <label for="zadsed">Складывающееся заднее сиденье</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="pas">
+                                    <label for="pas">Функция складывания спинки сиденья пассажира</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="table">
+                                    <label for="table">Складной столик на спинках передних сидений</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="backlight">
+                                    <label for="backlight">Декоративная подсветка салона</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="center">
+                                    <label for="center">Передний центральный подлокотник</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="third">
+                                    <label for="third">Третий задний подголовник</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Вентиляция сидений</option>
+                                    <option>Неважно</option>
+                                    <option>Передних сидений</option>
+                                    <option>Задних сидений</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Память положения сидений</option>
+                                    <option>Неважно</option>
+                                    <option>Сиденья водителя</option>
+                                    <option>Передних сидений</option>
+                                    <option>Задних сидений</option>
+                                </select>
+                                <select class="comfort-select">
+                                    <option>Количество мест</option>
+                                    <option>Неважно</option>
+                                    <option>Количество мест: 2</option>
+                                    <option>Количество мест: 4</option>
+                                    <option>Количество мест: 5</option>
+                                    <option>Количество мест: 6</option>
+                                    <option>Количество мест: 7</option>
+                                    <option>Количество мест: 8</option>
+                                    <option>Количество мест: 9</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="tinting">
+                                    <label for="tinting">Тонированные стекла</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="sunprotection">
+                                    <label for="sunprotection">Солнцезащитные шторки в задних дверях</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="sunprotection_zad">
+                                    <label for="sunprotection_zad">Солнцезащитная шторка на заднем стекле</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="patch">
+                                    <label for="patch">Декоративные накладки на педали</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="doorstep">
+                                    <label for="doorstep">Накладки на пороги</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="armchair">
+                                    <label for="armchair">Капитанские кресла заднего ряда</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="glazing">
+                                    <label for="glazing">Атермальное остекление</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-block">
+                    <div class="other-title">Прочее</div>
+                    <div class="other-content">
+                        <div class="other-columns">
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Подвеска</option>
+                                    <option>Неважно</option>
+                                    <option>Активная</option>
+                                    <option>Спортивная</option>
+                                    <option>Пневмоподвеска</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="farkop">
+                                    <label for="farkop">Фаркоп</label>
+                                </div>
+                            </div>
+
+                            <div class="comfort-column">
+                                <select class="comfort-select">
+                                    <option>Запасное колесо</option>
+                                    <option>Неважно</option>
+                                    <option>Полноразмерное</option>
+                                    <option>Докатка</option>
+                                </select>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="defense">
+                                    <label for="defense">Защита картера</label>
+                                </div>
+                            </div>
+                            <div class="comfort-column">
+                                <div class="placeholder-select"></div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" id="second">
+                                    <label for="second">Второй комплект резины</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse-row">
+                <button class="collapse-btn">
+                    <img src="../assets/icons/up_line.png" alt="Collapse Icon" class="collapse-icon">
+                    Свернуть страницу
+                </button>
+            </div>
+        </div>
+
+
+        <div class="filter-buttons">
+            <div class="filter-left">
+                <span class="filter-text">
+                    <img src="../assets/icons/down_line.png" alt="Filter Icon" class="filter-icon">Все параметры
+                </span>
+                <button class="btn btn--green" data-filter="all"><span class="badge">БЕЗ ДТП</span></button>
+            </div>
+            <div class="filter-right">
+                <button class="btn btn--reset" data-filter="reset">х Сбросить</button>
+                <button class="btn btn--show" data-filter="show">Показать 745 267 предложений</button>
+            </div>
+        </div>
+        <div class="sort-options">
+            <span>745 267 предложений</span>
+            <a href="#">Сохранить поиск</a>
+        </div>
+
+        <div class="category-row">
+            <a href="#" class="category-item">
+                <img src="../assets/icons/wolkswagen.png" alt="Logo 1" class="category-logo">
+                <span class="category-name">Volkswagen</span>
+                <span class="category-count">9014</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/bmw.png" alt="Logo 2" class="category-logo">
+                <span class="category-name">BMW</span>
+                <span class="category-count">13758</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/chery.png" alt="Logo 3" class="category-logo">
+                <span class="category-name">Chery</span>
+                <span class="category-count">8907</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/ford.png" alt="Logo 4" class="category-logo">
+                <span class="category-name">Ford</span>
+                <span class="category-count">5968</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/geely.png" alt="Logo 5" class="category-logo">
+                <span class="category-name">Geely</span>
+                <span class="category-count">7166</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/hyndai.png" alt="Logo 6" class="category-logo">
+                <span class="category-name">Hyundai</span>
+                <span class="category-count">7511</span>
+            </a>
+        </div>
+        <div class="category-row">
+            <a href="#" class="category-item">
+                <img src="../assets/icons/lada.png" alt="Logo 7" class="category-logo">
+                <span class="category-name">Lada (BAЗ)</span>
+                <span class="category-count">12874</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/mercedes.png" alt="Logo 8" class="category-logo">
+                <span class="category-name">Mercedes-Benz</span>
+                <span class="category-count">12989</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/kia.png" alt="Logo 9" class="category-logo">
+                <span class="category-name">Kia</span>
+                <span class="category-count">9825</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/toyota.png" alt="Logo 10" class="category-logo">
+                <span class="category-name">Toyota</span>
+                <span class="category-count">9135</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/nissan.png" alt="Logo 11" class="category-logo">
+                <span class="category-name">Nissan</span>
+                <span class="category-count">6305</span>
+            </a>
+            <a href="#" class="category-item">
+                <img src="../assets/icons/audi.png" alt="Logo 12" class="category-logo">
+                <span class="category-name">Audi</span>
+                <span class="category-count">5908</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="car-list">
+    <div class="car-card">
+        <img src="../assets/images/category/one.jpg" alt="Hyundai Palisade" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">Hyundai Palisade II Рестайлинг</span>
+                <span class="car-year">2024</span>
+                <span class="car-price">5 090 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. Calligraphy, Черный<br>
+                Бензин, 3.5 л., 249 л.с., На заказ<br>
+                Полный привод, Автомат
+            </div>
+            <div>
+                <div class="car-seller">Автосалон Драйв (pro)</div>
+                <div class="car-location">Санкт-Петербург</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="../assets/images/category/two.jpg" alt="Toyota Camry" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">Toyota Camry XLE</span>
+                <span class="car-year">2023</span>
+                <span class="car-price">3 800 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. XLE, Серебристый<br>
+                Гибрид, 2.5 л., 211 л.с., В наличии<br>
+                Передний привод, Вариатор
+            </div>
+            <div>
+                <div class="car-seller">Автоцентр Ягуар (pro)</div>
+                <div class="car-location">Москва</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="../assets/images/category/three.jpg" alt="Volkswagen Golf" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">Volkswagen Golf GTI</span>
+                <span class="car-year">2022</span>
+                <span class="car-price">3 200 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. GTI, Красный<br>
+                Бензин, 2.0 л., 245 л.с., В наличии<br>
+                Передний привод, Робот
+            </div>
+            <div>
+                <div class="car-seller">Автосалон Ауди Центр (pro)</div>
+                <div class="car-location">Екатеринбург</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="../assets/images/category/four.jpg" alt="Kia Sorento" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">Kia Sorento Premium</span>
+                <span class="car-year">2023</span>
+                <span class="car-price">4 500 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. Premium, Белый<br>
+                Дизель, 2.2 л., 200 л.с., На заказ<br>
+                Полный привод, Автомат
+            </div>
+            <div>
+                <div class="car-seller">Автосалон Киа (pro)</div>
+                <div class="car-location">Новосибирск</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="../assets/images/category/five.jpg" alt="BMW X5" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">BMW X5 xDrive40i</span>
+                <span class="car-year">2024</span>
+                <span class="car-price">7 200 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. xDrive40i, Синий<br>
+                Бензин, 3.0 л., 340 л.с., В наличии<br>
+                Полный привод, Автомат
+            </div>
+            <div>
+                <div class="car-seller">Автосалон БМВ (pro)</div>
+                <div class="car-location">Казань</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="../assets/images/category/six.jpg" alt="Audi Q7" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">Audi Q7 Prestige</span>
+                <span class="car-year">2023</span>
+                <span class="car-price">6 800 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. Prestige, Чёрный<br>
+                Бензин, 3.0 л., 335 л.с., На заказ<br>
+                Полный привод, Робот
+            </div>
+            <div>
+                <div class="car-seller">Автосалон Ауди (pro)</div>
+                <div class="car-location">Ростов-на-Дону</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="../assets/images/category/seven.jpg" alt="Ford Explorer" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">Ford Explorer Limited</span>
+                <span class="car-year">2022</span>
+                <span class="car-price">4 900 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. Limited, Серый<br>
+                Бензин, 3.0 л., 365 л.с., В наличии<br>
+                Полный привод, Автомат
+            </div>
+            <div>
+                <div class="car-seller">Автосалон Форд (pro)</div>
+                <div class="car-location">Самара</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="../assets/images/category/eigth.jpg" alt="Mercedes GLE" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">Mercedes-Benz GLE 450</span>
+                <span class="car-year">2024</span>
+                <span class="car-price">8 500 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. 450, Белый<br>
+                Гибрид, 3.0 л., 367 л.с., На заказ<br>
+                Полный привод, Автомат
+            </div>
+            <div>
+                <div class="car-seller">Автосалон Мерседес (pro)</div>
+                <div class="car-location">Нижний Новгород</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="../assets/images/category/nine.jpg" alt="Volvo XC90" class="car-image">
+        <div class="car-info">
+            <div>
+                <span class="car-model">Volvo XC90 T8</span>
+                <span class="car-year">2023</span>
+                <span class="car-price">6 300 000 ₽</span>
+            </div>
+            <div class="car-specs">
+                Компл. T8, Серебристый<br>
+                Гибрид, 2.0 л., 400 л.с., В наличии<br>
+                Полный привод, Автомат
+            </div>
+            <div>
+                <div class="car-seller">Автосалон Волво (pro)</div>
+                <div class="car-location">Краснодар</div>
+            </div>
+            <div class="car-icons-container">
+                <div class="car-icons">... → ♥</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dealer-section">
+    <div class="dealer-card">
+        <img src="../assets/icons/aziaavto.png" alt="AAM Азия Авто Микс" class="dealer-image">
+        <div class="dealer-info">
+            <div class="dealer-name">Азия Авто Микс</div>
+            <div class="dealer-type">Салон</div>
+            <div class="dealer-cars">2054 авто в продаже</div>
+        </div>
+    </div>
+    <div class="dealer-card">
+        <img src="../assets/icons/avtomarket.png" alt="Автомаркет" class="dealer-image">
+        <div class="dealer-info">
+            <div class="dealer-name">Автомаркет</div>
+            <div class="dealer-type">Салон</div>
+            <div class="dealer-cars">2222 авто в продаже</div>
+        </div>
+    </div>
+    <div class="dealer-card">
+        <img src="../assets/icons/timecar.png" alt="TimeCar" class="dealer-image">
+        <div class="dealer-info">
+            <div class="dealer-name">TimeCar</div>
+            <div class="dealer-type">Салон</div>
+            <div class="dealer-cars">1486 авто в продаже</div>
+        </div>
+    </div>
+    <div class="dealer-card">
+        <img src="https://via.placeholder.com/150?text=Автохаб" alt="Автохаб" class="dealer-image">
+        <div class="dealer-info">
+            <div class="dealer-name">Автохаб</div>
+            <div class="dealer-type">Салон</div>
+            <div class="dealer-cars">1636 авто в продаже</div>
+        </div>
+    </div>
+</div>
+
+<div class="model-section">
+    <h2 class="model-title">Модели, комплектации и цены Hyundai</h2>
+    <div class="model-list">
+        <div class="model-item">
+            <span class="model-name">Hyundai Tucson</span>
+            <span class="model-price">370 000 ₽</span>
+            <span class="model-count">2 669 предложений</span>
+        </div>
+        <div class="model-item">
+            <span class="model-name">Hyundai Sonata</span>
+            <span class="model-price">65 000 ₽</span>
+            <span class="model-count">2 581 предложение</span>
+        </div>
+        <div class="model-item">
+            <span class="model-name">Hyundai Santa Fe</span>
+            <span class="model-price">268 000 ₽</span>
+            <span class="model-count">3 889 предложений</span>
+        </div>
+        <div class="model-item">
+            <span class="model-name">Hyundai Elantra</span>
+            <span class="model-price">80 000 ₽</span>
+            <span class="model-count">2 537 предложений</span>
+        </div>
+        <div class="model-item">
+            <span class="model-name">Hyundai Staria</span>
+            <span class="model-price">1 950 000 ₽</span>
+            <span class="model-count">417 предложений</span>
+        </div>
+    </div>
+</div>
+
+<div class="secondary-nav-wrapper">
+    <div class="container secondary-nav">
+        <a href="#">Разместить рекламу</a>
+        <a href="#">Для бизнеса</a>
+        <a href="#">Помощь</a>
+        <a href="#">Стань частью команды</a>
+        <a href="#">О проекте</a>
+        <a href="#">Аналитика Авто.ру</a>
+        <a href="#">Саша Котов</a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-block">
+            <strong><a href="#">Москва</a></strong>
+            <strong><a href="#">Санкт-Петербург</a></strong>
+            <strong><a href="#">Владимир</a></strong>
+            <strong><a href="#">Волгоград</a></strong>
+            <strong><a href="#">Воронеж</a></strong>
+            <strong><a href="#">Екатеринбург</a></strong>
+            <a href="#">Алтайский край</a>
+            <a href="#">Амурская область</a>
+            <a href="#">Архангельская область</a>
+            <a href="#">Астраханская область</a>
+            <a href="#">Башкортостан</a>
+            <a href="#">Белгородская область</a>
+            <a href="#">Брянская область</a>
+            <a href="#">Владимирская область</a>
+            <a href="#">Волгоградская область</a>
+            <a href="#">Вологодская область</a>
+            <a href="#">Воронежская область</a>
+            <a href="#">Еврейская автономная область</a>
+            <a href="#">Забайкальский край</a>
+            <a href="#">Ивановская область</a>
+            <a href="#">Иркутская область</a>
+            <a href="#">Кабардино-Балкарская Республика</a>
+            <a href="#">Калининградская область</a>
+            <a href="#">Калужская область</a>
+            <a href="#">Камчатский край</a>
+            <a href="#">Карачаево-Черкесская Республика</a>
+            <a href="#">Кемеровская область</a>
+            <a href="#">Кировская область</a>
+        </div>
+        <div class="footer-block">
+            <strong><a href="#">Иваново</a></strong>
+            <strong><a href="#">Казань</a></strong>
+            <strong><a href="#">Калуга</a></strong>
+            <strong><a href="#">Кострома</a></strong>
+            <strong><a href="#">Краснодар</a></strong>
+            <strong><a href="#">Красноярск</a></strong>
+            <a href="#">Костромская область</a>
+            <a href="#">Краснодарский край</a>
+            <a href="#">Красноярский край</a>
+            <a href="#">Курганская область</a>
+            <a href="#">Курская область</a>
+            <a href="#">Липецкая область</a>
+            <a href="#">Магаданская область</a>
+            <a href="#">Москва и Московская область</a>
+            <a href="#">Мурманская область</a>
+            <a href="#">Ненецкий автономный округ</a>
+            <a href="#">Нижегородская область</a>
+            <a href="#">Новгородская область</a>
+            <a href="#">Новосибирская область</a>
+            <a href="#">Омская область</a>
+            <a href="#">Оренбургская область</a>
+            <a href="#">Орловская область</a>
+            <a href="#">Пензенская область</a>
+            <a href="#">Пермский край</a>
+            <a href="#">Приморский край</a>
+            <a href="#">Псковская область</a>
+            <a href="#">Республика Адыгея</a>
+        </div>
+        <div class="footer-block">
+            <strong><a href="#">Нижний Новгород</a></strong>
+            <strong><a href="#">Новосибирск</a></strong>
+            <strong><a href="#">Омск</a></strong>
+            <strong><a href="#">Пермь</a></strong>
+            <strong><a href="#">Ростов-на-Дону</a></strong>
+            <strong><a href="#">Самара</a></strong>
+            <a href="#">Республика Алтай</a>
+            <a href="#">Республика Башкортостан</a>
+            <a href="#">Республика Бурятия</a>
+            <a href="#">Республика Дагестан</a>
+            <a href="#">Республика Ингушетия</a>
+            <a href="#">Республика Калмыкия</a>
+            <a href="#">Республика Карелия</a>
+            <a href="#">Республика Коми</a>
+            <a href="#">Республика Крым</a>
+            <a href="#">Республика Марий Эл</a>
+            <a href="#">Республика Мордовия</a>
+            <a href="#">Республика Саха (Якутия)</a>
+            <a href="#">Республика Северная Осетия — Алания</a>
+            <a href="#">Республика Татарстан</a>
+            <a href="#">Республика Тыва</a>
+            <a href="#">Республика Хакасия</a>
+            <a href="#">Ростовская область</a>
+            <a href="#">Рязанская область</a>
+            <a href="#">Самарская область</a>
+            <a href="#">Санкт-Петербург и Ленинградская область</a>
+        </div>
+        <div class="footer-block">
+            <strong><a href="#">Саратов</a></strong>
+            <strong><a href="#">Тверь</a></strong>
+            <strong><a href="#">Тула</a></strong>
+            <strong><a href="#">Уфа</a></strong>
+            <strong><a href="#">Челябинск</a></strong>
+            <strong><a href="#">Ярославль</a></strong>
+            <a href="#">Саратовская область</a>
+            <a href="#">Сахалинская область</a>
+            <a href="#">Свердловская область</a>
+            <a href="#">Смоленская область</a>
+            <a href="#">Ставропольский край</a>
+            <a href="#">Тамбовская область</a>
+            <a href="#">Тверская область</a>
+            <a href="#">Томская область</a>
+            <a href="#">Тульская область</a>
+            <a href="#">Тюменская область</a>
+            <a href="#">Удмуртская Республика</a>
+            <a href="#">Ульяновская область</a>
+            <a href="#">Хабаровский край</a>
+            <a href="#">Ханты-Мансийский автономный округ - Югра</a>
+            <a href="#">Челябинская область</a>
+            <a href="#">Чеченская Республика</a>
+            <a href="#">Чувашская Республика</a>
+            <a href="#">Чукотский автономный округ</a>
+            <a href="#">Ямало-Ненецкий автономный округ</a>
+            <a href="#">Ярославская область</a>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <div class="container">
+            <p class="footer-text-column">
+                Авто.ру — один из самых посещаемых автомобильных сайтов в российском интернете
+            </p>
+            <p class="footer-text-column">
+                Мы предлагаем большой выбор легковых автомобилей, грузового и коммерческого транспорта, мототехники, спецтехники и многих других видов транспортных средств
+            </p>
+        </div>
+    </div>
+    <div class="footer-divider-top"></div>
+    <div class="footer-bottom-part">
+        <div class="container footer-bottom-container">
+            <div class="footer-row">
+                <div class="footer-column-left">
+                    <span>ООО «Сервисы размещения объявлений»</span>
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Правила рекомендаций</a>
+                </div>
+                <div class="footer-column-right">
+                    <div class="social-icons">
+                        <a href="https://vk.com" target="_blank" class="social-icon vk">
+                            <img src="../assets/icons/vk.png" alt="ВКонтакте">
+                        </a>
+                        <a href="https://ok.ru" target="_blank" class="social-icon ok">
+                            <img src="../assets/icons/odnokl.png" alt="Одноклассники">
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-icon youtube">
+                            <img src="../assets/icons/youtube.png" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-row footer-products">
+                <div class="footer-products-left">
+                    <a href="#">Недвижимость</a>
+                    <a href="#">Аренда</a>
+                    <a href="#">Путешествия</a>
+                    <a href="#">Расписания</a>
+                    <a href="#">Услуги</a>
+                </div>
+                <div class="footer-products-right">
+                    <div class="yandex-brand">
+                        <span>Проект компании</span>
+                        <a href="https://yandex.ru" target="_blank" class="yandex-logo-link">
+                            <img src="../assets/icons/yandex.png" alt="Яндекс">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/category.js"></script>
+</body>
+</html>

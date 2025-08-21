@@ -1,0 +1,245 @@
+@media (max-width: 480px) {
+    html, body {
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .logo{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .search input{
+        width: 100px;
+        height: 29px;
+    }
+    .first{
+        display: none;
+    }
+    .second{
+        display: none;
+    }
+    .third{
+        display: none;
+    }
+    .fourth{
+        display: none;
+    }
+    .fifth{
+        display: none;
+    }
+    .brands h2{
+        font-size: 14px;
+    }
+    .actions .btn--outline{
+        font-size: 10px;
+        margin-bottom: -10px;
+    }
+    .actions .btn--primary{
+        text-align: center;
+        font-size: 10px;
+        color: white;
+        width: 140px;
+        margin-bottom: -10px;
+    }
+    .categories{
+        height: 30px;
+    }
+    .container a{
+        margin-top: -10px;
+        height: 30px;
+        font-size: 8px;
+    }
+    .galleries{
+        display: none;
+    }
+    .garazh{
+        display: none;
+    }
+    .zhurnal{
+        display: none;
+    }
+    .biznes{
+        display: none;
+    }
+    .categories1{
+        height: 30px;
+    }
+    .container1 a{
+        margin-top: -10px;
+        height: 30px;
+        font-size: 8px;
+    }
+    .brand-item{
+        font-size: 8px;
+        padding: 0;
+    }
+    .brand-item span{
+        margin-left: 5px;
+    }
+    .offer-block{
+        width: 100%;
+        margin-left: -20px;
+        margin-bottom: -30px;
+        border-radius: 20px;
+    }
+    .offer-block span{
+        font-size: 7px;
+    }
+    .offer-block button{
+        font-size: 7px;
+    }
+    .recommend-header h1{
+        font-size: 16px;
+    }
+    .recommend-banner{
+        height: 40px;
+        background: #0000001a;
+        padding: 10px 10px;
+    }
+    .recommend-banner img{
+        width: 80px;
+    }
+    .recommend-banner .banner-text strong{
+        font-size: 10px;
+    }
+    .recommend-banner .banner-text p{
+        font-size: 8px;
+    }
+    .recommend-banner .btn--black {
+        width: 70px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 10px;
+        margin-bottom: 1px;
+    }
+    .valuation{
+        display: none;
+    }
+    .rec-card{
+        height: 150px;
+    }
+    .rec-info h3{
+        margin-top: -5px;
+        font-size: 10px;
+    }
+    .rec-info p{
+        font-size: 8px;
+    }
+    .rec-img img{
+        height: 60px;
+    }
+    .rating{
+        font-size: 8px;
+    }
+    .secondary-nav-wrapper{
+        border-top: none;
+    }
+    .secondary-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 95%;
+    }
+    .secondary-nav a{
+        font-size: 12px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-block {
+        flex: 1;
+        min-width: 80px;
+    }
+    .footer-block a{
+        width: 100%;
+        font-size: 7px;
+        margin-bottom: 1px;
+    }
+    .footer-text-column{
+        font-size: 8px;
+    }
+    .footer-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 5px;
+    }
+    .footer-column-left span{
+        margin-top: -28px;
+        font-size: 5px;
+    }
+    .footer-products-left{
+        margin-top: -60px;
+        font-size: 5px;
+    }
+    .footer-products-right span{
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .logo{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .search input{
+        width: 350px;
+        height: 29px;
+    }
+    .first{
+        display: none;
+    }
+    .second{
+        display: none;
+    }
+    .third{
+        display: none;
+    }
+    .fourth{
+        display: none;
+    }
+    .fifth{
+        display: none;
+    }
+    .brands h2{
+        font-size: 14px;
+    }
+    .actions .btn--outline{
+        font-size: 15px;
+        margin-bottom: -10px;
+    }
+    .actions .btn--primary{
+        text-align: center;
+        font-size: 10px;
+        color: white;
+        width: 140px;
+    }
+}
+
+/* Ноутбуки */
+@media (max-width: 1280px) {
+    body { font-size: 18px; }
+}
+
+/* Большие экраны */
+@media (min-width: 1281px) {
+    body { font-size: 20px; }
+}

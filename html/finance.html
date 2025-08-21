@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авто.ру: — Финансы</title>
+    <link rel="stylesheet" href="../css/finance.css">
+    <script src="../js/car.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+    <div class="container topbar__inner">
+        <div class="logo">auto.ru</div>
+        <div class="search">
+            <input type="text" placeholder="Поиск по объявлениям">
+        </div>
+        <div class="actions">
+            <a href="#">Избранное</a>
+            <a href="#">Поиски</a>
+            <a href="#">Сравнения</a>
+            <a href="#">Сообщения</a>
+            <a href="#">Я продаю</a>
+            <a href="#" class="btn btn--outline">Войти</a>
+            <a href="#" class="btn btn--primary">Разместить объявление</a>
+        </div>
+    </div>
+</header>
+
+<nav class="categories">
+    <div class="container">
+        <a href="#">Легковые</a>
+        <a href="#">Коммерческие</a>
+        <a href="#">Электро</a>
+        <a href="#">Китайские</a>
+        <a href="#">Мото</a>
+        <a href="#">Отчёты</a>
+        <a href="#">Кредиты</a>
+        <a href="#">Оценка авто</a>
+        <a href="#">Страховки</a>
+        <a href="#">Гараж</a>
+        <a href="#">Журнал</a>
+        <a href="#">Для бизнеса</a>
+    </div>
+</nav>
+
+<main>
+    <div class="credit-section">
+        <div class="credit-left">
+            <img src="../assets/icons/finance.png" alt="Finance icon" class="credit-icon">
+            <h1 class="credit-title">Подберём кредит с подходящими<br>для Вас условиями</h1>
+            <p class="credit-subtitle">Сравним предложения разных банков по вашим запросам и выберем самое привлекательное. Не нужно открывать десяток вкладок в браузере, самому что-то считать и читать «мелкий шрифт». Мы сделаем это за вас.</p>
+        </div>
+        <div class="credit-right">
+            <img src="../assets/icons/image_finance.png" alt="Car image" class="credit-image">
+        </div>
+    </div>
+    <div class="credit-block">
+        <div class="credit-title credit-title--block">Оставьте заявку</div>
+        <div class="credit-subtitle credit-subtitle--block">
+            Заполните заявку сейчас — вам понадобится только паспорт и водительское удостоверение
+        </div>
+        <div class="credit-columns">
+            <div class="credit-left-column">
+                <div class="credit-section1">
+                    <span class="credit-label">Сумма кредита</span>
+                    <span class="credit-value" id="loan-amount">100 000 ₽ - 2 450 000 ₽</span>
+                    <input type="range" min="100000" max="7000000" value="10000" step="10000" id="loan-slider" oninput="updateLoan()">
+                </div>
+                <div class="credit-section1">
+                    <span class="credit-label">Срок кредита</span>
+                    <span class="credit-value" id="loan-term">1 год - 8 лет</span>
+                    <input type="range" min="1" max="8" value="1" step="1" id="term-slider" oninput="updateTerm()">
+                </div>
+                <div class="credit-details">
+                    <div class="credit-detail">
+                        <span class="credit-label">Первый взнос</span>
+                        <span class="credit-value" id="down-payment">0 ₽</span>
+                    </div>
+                    <div class="credit-detail">
+                        <span class="credit-label">Платеж</span>
+                        <span class="credit-value" id="monthly-payment">44 000 ₽ / мес.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="credit-right-column">
+                <div class="credit-input">
+                    <input type="text" placeholder="ФИО">
+                </div>
+                <div class="credit-input">
+                    <input type="text" placeholder="Электронная почта">
+                </div>
+                <div class="credit-input">
+                    <input type="tel" placeholder="+7" value="+7" style="background-color: #fff; font-size: 12px; color: #666;" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10); if (!this.value) this.value = '+7';">
+                </div>
+                <div class="credit-button">
+                    <button class="btn btn--black">Подтвердить</button>
+                </div>
+                <div class="credit-agreement">
+                    <span class="credit-subtext">
+                        Согласен на обработку данных: ООО «Сервисы размещения объявлений» для оформления заявки; АО «Объединенное кредитное бюро» и АО «Яндекс Банк» для подготовки отчета; Другими банками; в соответствии с условиями обработки данных.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how-it-works">
+        <h1 class="how-title">Как это работает?</h1>
+        <p class="how-subtitle">Авто.ру Финанс — сервис, который поможет выбрать кредит <br>с привлекательными условиями именно по вашим запросам.</p>
+        <div class="how-steps">
+            <div class="step-item">
+                <img src="../assets/icons/pencil.png" alt="Step 1" class="step-image">
+                <p class="step-text">Вы оставляете заявку на автомобиль мечты</p>
+            </div>
+            <div class="step-item">
+                <img src="../assets/icons/coin.png" alt="Step 2" class="step-image">
+                <p class="step-text">Мы находим самые привлекательные предложения от банков</p>
+            </div>
+            <div class="step-item">
+                <img src="../assets/icons/key.png" alt="Step 3" class="step-image">
+                <p class="step-text">Вы выбираете самое подходящее, и ключи от мечты — ваши!</p>
+            </div>
+        </div>
+        <p class="how-subheader">Подбор кредита</p>
+        <div class="how-options">
+            <div class="option-item">
+                <img src="../assets/icons/sberbank.png" alt="Option 1" class="option-image">
+                <p class="option-text">Сбербанк</p>
+                <p class="bank-rate">до 5 млн ₽</p>
+            </div>
+            <div class="option-item">
+                <img src="../assets/icons/tbank.png" alt="Option 2" class="option-image">
+                <p class="option-text">Т-Банк</p>
+                <p class="bank-rate">до 8 млн ₽</p>
+            </div>
+            <div class="option-item">
+                <img src="../assets/icons/sovbank.png" alt="Option 3" class="option-image">
+                <p class="option-text">Совкомбанк</p>
+                <p class="bank-rate">до 3 млн ₽</p>
+            </div>
+            <div class="option-item">
+                <img src="../assets/icons/autotime.png" alt="Option 4" class="option-image">
+                <p class="option-text">AUTOTIME</p>
+                <p class="bank-rate">до 8 млн ₽</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h1 class="faq-title">Ответы на вопросы</h1>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">Как быстро я получу предложения от банков? <img src="../assets/icons/down_line.png" alt="Arrow" class="faq-arrow"></div>
+                <div class="faq-answer">Мы быстро обойдем банки и соберём предложения в вашем Личном кабинете</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Можно ли выбрать конкретный банк? <img src="../assets/icons/down_line.png" alt="Arrow" class="faq-arrow"></div>
+                <div class="faq-answer">Конечно! Через личный кабинет вы можете исключить или добавить любимые банки,
+                    отправить заявки сразу в несколько, а при необходимости — скорректировать их.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Как узнать статус моей заявки? <img src="../assets/icons/down_line.png" alt="Arrow" class="faq-arrow"></div>
+                <div class="faq-answer">Очень просто и быстро: в вашем Личном кабинете,
+                    где также будут собраны предложения от других банков.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">А могу ли я оформить кредит на себя, а машину купить кому-то другому? <img src="../assets/icons/down_line.png" alt="Arrow" class="faq-arrow"></div>
+                <div class="faq-answer">Да, без проблем. Вот кому-то повезет!</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">А что, если желаемый автомобиль продадут? <img src="../assets/icons/down_line.png" alt="Arrow" class="faq-arrow"></div>
+                <div class="faq-answer">Мы делаем всё максимально быстро, чтобы ласточка не успела упорхнуть.
+                    Но если хороший вариант всё же уйдет – сразу расскажем об этом вам и предложим
+                    выбрать из десятков тысяч других автомобилей, размещенных на Авто.ру.</div>
+            </div>
+        </div>
+        <p class="faq-disclaimer">Финанс - информационный функционал сервиса Авто.ру, предоставляющий содействие в подборе финансовых услуг. Владельцем сервиса финансовые услуги не оказываются. Финансовые услуги предоставляются АО «ТБанк»; Банк ГПБ (АО); ПАО «Совкомбанк»; АО «Альфа-Банк»; ПАО «Сбербанк». С более подробными условиями можно ознакомиться здесь, иную дополнительную информацию об условиях предоставления, использования и возврата кредита необходимо уточнять непосредственно у кредитных организаций.</p>
+    </div>
+</main>
+
+<div class="footer-bottom-part">
+    <div class="container footer-bottom-container">
+        <div class="footer-row">
+            <div class="footer-column-left">
+                <span>ООО «Сервисы размещения объявлений»</span>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Правила рекомендаций</a>
+            </div>
+            <div class="footer-column-right">
+                <div class="social-icons">
+                    <a href="https://vk.com" target="_blank" class="social-icon vk">
+                        <img src="../assets/icons/vk.png" alt="ВКонтакте">
+                    </a>
+                    <a href="https://ok.ru" target="_blank" class="social-icon ok">
+                        <img src="../assets/icons/odnokl.png" alt="Одноклассники">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icon youtube">
+                        <img src="../assets/icons/youtube.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-row footer-products">
+            <div class="footer-products-left">
+                <a href="#">Недвижимость</a>
+                <a href="#">Аренда</a>
+                <a href="#">Путешествия</a>
+                <a href="#">Расписания</a>
+                <a href="#">Услуги</a>
+            </div>
+            <div class="footer-products-right">
+                <div class="yandex-brand">
+                    <span>Проект компании</span>
+                    <a href="https://yandex.ru" target="_blank" class="yandex-logo-link">
+                        <img src="../assets/icons/yandex.png" alt="Яндекс">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
