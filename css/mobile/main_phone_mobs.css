@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     html, body {
         width: 100%;
         min-width: 100%;
@@ -8,109 +8,138 @@
         overflow-x: hidden;
     }
 
-    .logo{
+    .logo {
         font-size: 20px;
         margin-left: 10px;
     }
-    header .search input{
+
+    header .search input {
         width: 100px;
         height: 29px;
     }
-    .first{
+
+    .first {
         display: none;
     }
-    .second{
+
+    .second {
         display: none;
     }
-    .third{
+
+    .third {
         display: none;
     }
-    .fourth{
+
+    .fourth {
         display: none;
     }
-    .fifth{
+
+    .fifth {
         display: none;
     }
-    .brands h2{
+
+    .brands h2 {
         font-size: 14px;
     }
-    .actions .btn--outline{
+
+    .actions .btn--outline {
         font-size: 10px;
         margin-bottom: -10px;
     }
-    .actions .btn--primary{
+
+    .actions .btn--primary {
         text-align: center;
         font-size: 10px;
         color: white;
         width: 140px;
         margin-bottom: -10px;
     }
-    .categories{
+
+    .categories {
         height: 30px;
     }
-    .container a{
+
+    .container a {
         margin-top: -10px;
         font-size: 8px;
     }
-    .galleries{
+
+    .galleries {
         display: none;
     }
-    .garazh{
+
+    .garazh {
         display: none;
     }
-    .zhurnal{
+
+    .zhurnal {
         display: none;
     }
-    .biznes{
+
+    .biznes {
         display: none;
     }
-    .categories1{
+
+    .categories1 {
         height: 30px;
     }
-    .container{
+
+    .container {
         max-width: 600px;
     }
-    .container1 a{
+
+    .container1 a {
         margin-top: -10px;
         height: 30px;
         font-size: 8px;
     }
-    .brand-item{
+
+    .brand-item {
         font-size: 8px;
         padding: 0;
     }
-    .brand-item span{
+
+    .brand-item span {
         margin-left: 5px;
     }
-    .offer-block{
+
+    .offer-block {
         width: 100%;
         margin-left: -20px;
         margin-bottom: -30px;
         border-radius: 20px;
     }
-    .offer-block span{
+
+    .offer-block span {
         font-size: 7px;
     }
-    .offer-block button{
+
+    .offer-block button {
         font-size: 7px;
     }
-    .recommend-header h1{
+
+    .recommend-header h1 {
         font-size: 16px;
     }
-    .recommend-banner{
+
+    .recommend-banner {
         height: 40px;
         background: #0000001a;
         padding: 10px 10px;
     }
-    .recommend-banner img{
+
+    .recommend-banner img {
         width: 80px;
     }
-    .recommend-banner .banner-text strong{
+
+    .recommend-banner .banner-text strong {
         font-size: 10px;
     }
-    .recommend-banner .banner-text p{
+
+    .recommend-banner .banner-text p {
         font-size: 8px;
     }
+
     .recommend-banner .btn--black {
         width: 70px;
         height: 25px;
@@ -118,74 +147,432 @@
         border-radius: 10px;
         margin-bottom: 1px;
     }
-    .valuation{
+
+    .valuation {
         display: none;
     }
-    .rec-card{
+
+    .rec-card {
         height: 150px;
     }
-    .rec-info h3{
+
+    .rec-info h3 {
         margin-top: -5px;
         font-size: 10px;
     }
-    .rec-info p{
+
+    .rec-info p {
         font-size: 8px;
     }
-    .rec-img img{
+
+    .rec-img img {
         height: 60px;
     }
-    .rating{
+
+    .rating {
         font-size: 8px;
     }
-    .secondary-nav-wrapper{
+
+    .secondary-nav-wrapper {
         border-top: none;
     }
-    .secondary-nav{
+
+    .secondary-nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 95%;
     }
-    .secondary-nav a{
+
+    .secondary-nav a {
         font-size: 12px;
     }
+
     .footer-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
     }
+
     .footer-block {
         flex: 1;
         min-width: 80px;
     }
-    .footer-block a{
+
+    .footer-block a {
         width: 100%;
         font-size: 7px;
         margin-bottom: 1px;
     }
-    .footer-text-column{
+
+    .footer-text-column {
         font-size: 8px;
     }
-    .footer-row{
+
+    .footer-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         font-size: 5px;
     }
-    .footer-column-left span{
+
+    .footer-column-left span {
         margin-top: -28px;
         font-size: 5px;
     }
-    .footer-products-left{
+
+    .footer-products-left {
         margin-top: -60px;
         font-size: 5px;
     }
-    .footer-products-right span{
+
+    .footer-products-right span {
         font-size: 8px;
     }
 }
+
+
+@media (max-width: 375px) {
+    html, body {
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    header .topbar {
+        padding-top: 0;
+    }
+
+    header .logo {
+        font-size: 15px;
+        margin-left: -5px;
+        margin-right: 10px;
+    }
+
+    header .search input[type="text"] {
+        width: 150px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .topbar__inner {
+        justify-content: flex-start;
+    }
+
+    .actions {
+        height: 30px;
+    }
+
+    .actions .btn--outline {
+        height: 20px;
+        width: 35px;
+        font-size: 10px;
+        line-height: 7px;
+        margin-bottom: -13px;
+        padding-left: 2px;
+    }
+
+    .actions .btn--primary {
+        margin-left: -5px;
+        width: 100px;
+        height: 20px;
+        font-size: 6px;
+        margin-bottom: -13px;
+        text-align: center;
+    }
+
+    .categories .container {
+        margin-top: -10px;
+        height: 20px;
+        text-align: center;
+    }
+
+    .categories {
+        height: 20px;
+    }
+
+    .categories a {
+        text-align: center;
+        height: 10px;
+        margin-top: -3px;
+        font-size: 6px;
+    }
+
+    .categories1 .container1 {
+        margin-top: -10px;
+        height: 10px;
+        text-align: center;
+    }
+
+    .categories1 {
+        height: 10px;
+    }
+
+    .categories1 a {
+        text-align: center;
+        height: 10px;
+        margin-top: -3px;
+        font-size: 6px;
+    }
+
+    h2 {
+        margin-top: -10px;
+    }
+
+    .brand-list {
+        margin-top: 5px;
+        gap: 5px;
+    }
+
+    .brand-item {
+        font-size: 6px;
+        padding: 0;
+    }
+
+    .offer-block {
+        margin-left: -10px;
+    }
+
+    .offer-block span {
+        font-size: 6px;
+    }
+
+    .offer-block button {
+        width: 120px;
+        margin-right: -15px;
+        padding: 0;
+        height: 20px;
+        font-size: 6px;
+    }
+
+    .recommend-header img {
+        margin-right: -8px;
+    }
+
+    .recommend-header h1 {
+        font-size: 10px;
+    }
+
+    .recommend-banner {
+        height: 40px;
+        background: #0000001a;
+        padding: 10px 10px;
+        margin-top: -10px;
+    }
+
+    .recommend-banner img {
+        width: 60px;
+        margin-left: -8px;
+    }
+
+    .recommend-banner .banner-text strong {
+        font-size: 8px;
+    }
+
+    .recommend-banner .banner-text p {
+        font-size: 6px;
+        color: black;
+    }
+
+    .recommend-banner .btn--black {
+        width: 70px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 10px;
+        margin-bottom: 1px;
+    }
+
+    .valuation {
+        display: none;
+    }
+
+    .rec-grid {
+        gap: 5px;
+    }
+
+    .rec-card {
+        border-radius: 5px;
+        height: 110px;
+        border: none;
+    }
+
+    .rec-info h3 {
+        font-size: 8px;
+        margin-top: -10px;
+    }
+
+    .rec-info p {
+        display: none;
+    }
+
+    .rec-info span {
+        display: none;
+    }
+
+    .btn--black {
+        height: 30px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+
+    .secondary-nav-wrapper {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .secondary-nav-wrapper a {
+        font-size: 7px;
+    }
+
+    .footer {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .footer-content {
+        margin-left: -5px;
+        gap: 5px;
+    }
+
+    .footer-content {
+        width: 20px;
+    }
+
+    .footer-block {
+        min-width: 90px;
+    }
+
+    .footer-block a {
+        font-size: 6px;
+        width: 80px;
+        height: 25px;
+        padding: 0;
+        margin-bottom: 1px;
+    }
+
+    .footer-info p {
+        font-size: 6px;
+        margin-bottom: -15px;
+        margin-top: -15px;
+    }
+
+    .footer-row {
+        width: 100%;
+        gap: 0;
+    }
+
+    .footer-column-left {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 25px;
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .footer-column-right {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        height: 25px;
+        gap: 0;
+    }
+
+    .footer-products-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .footer-bottom-part {
+        padding-bottom: 0;
+    }
+
+    .footer-column-left span {
+        font-size: 5px;
+        width: 20%;
+        margin-top: -15px;
+    }
+
+    .footer-column-left a {
+        font-size: 5px;
+        width: 40%;
+        margin: 0;
+    }
+
+    .footer-column-left a:last-child {
+        font-size: 5px;
+        margin: 0;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+
+    .social-icons a {
+        height: 25px;
+        width: 25px;
+        margin: 0;
+    }
+
+    .footer-products {
+        padding-top: 0;
+    }
+
+    .footer-products-left {
+        justify-content: flex-start;
+        width: 60%;
+        height: 10px;
+        margin: 0;
+    }
+
+    .footer-products-left a {
+        margin: 0;
+        margin-right: 4px;
+        font-size: 6px;
+    }
+
+    .footer-products-left a:last-child {
+        margin: 0;
+    }
+
+    .footer-products-right {
+        justify-content: flex-end;
+        width: 40%;
+        height: 10px;
+    }
+
+    .yandex-brand {
+        height: 20px;
+        position: relative;
+    }
+
+    .yandex-brand span {
+        font-size: 6px;
+        height: 10px;
+        color: #666666;
+    }
+
+    .yandex-logo-link img {
+        height: 10px;
+        width: 25px;
+    }
+
+    .yandex-logo-link a {
+        height: 20px;
+        margin: 0;
+    }
+}
+
+
 
 @media (max-width: 320px) {
     html, body {
@@ -460,291 +847,4 @@
         height: 20px;
         margin: 0;
     }
-}
-
-@media (max-width: 375px) {
-    html, body {
-        width: 100%;
-        min-width: 100%;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-    header .topbar{
-        padding-top: 0;
-    }
-    header .logo{
-        font-size: 15px;
-        margin-left: -5px;
-        margin-right: 10px;
-    }
-    header .search input[type="text"]{
-        width: 150px;
-        height: 20px;
-        margin-right: 5px;
-    }
-    .topbar__inner{
-        justify-content: flex-start;
-    }
-    .actions{
-        height: 30px;
-    }
-    .actions .btn--outline {
-        height: 20px;
-        width: 35px;
-        font-size: 10px;
-        line-height: 7px;
-        margin-bottom: -13px;
-        padding-left: 2px;
-    }
-    .actions .btn--primary{
-        margin-left: -5px;
-        width: 100px;
-        height: 20px;
-        font-size: 6px;
-        margin-bottom: -13px;
-        text-align: center;
-    }
-    .categories .container{
-        margin-top: -10px;
-        height: 20px;
-        text-align: center;
-    }
-    .categories{
-        height: 20px;
-    }
-    .categories a{
-        text-align: center;
-        height: 10px;
-        margin-top: -3px;
-        font-size: 6px;
-    }
-    .categories1 .container1{
-        margin-top: -10px;
-        height: 10px;
-        text-align: center;
-    }
-    .categories1{
-        height: 10px;
-    }
-    .categories1 a{
-        text-align: center;
-        height: 10px;
-        margin-top: -3px;
-        font-size: 6px;
-    }
-    h2{
-        margin-top: -10px;
-    }
-    .brand-list{
-        margin-top: 5px;
-        gap: 5px;
-    }
-    .brand-item{
-        font-size: 6px;
-        padding: 0;
-    }
-    .offer-block{
-        margin-left: -10px;
-    }
-    .offer-block span{
-        font-size: 6px;
-    }
-    .offer-block button{
-        width: 120px;
-        margin-right: -15px;
-        padding: 0;
-        height: 20px;
-        font-size: 6px;
-    }
-    .recommend-header img{
-        margin-right: -8px;
-    }
-    .recommend-header h1{
-        font-size: 10px;
-    }
-    .recommend-banner{
-        height: 40px;
-        background: #0000001a;
-        padding: 10px 10px;
-        margin-top: -10px;
-    }
-    .recommend-banner img{
-        width: 60px;
-        margin-left: -8px;
-    }
-    .recommend-banner .banner-text strong{
-        font-size: 8px;
-    }
-    .recommend-banner .banner-text p{
-        font-size: 6px;
-        color: black;
-    }
-    .recommend-banner .btn--black {
-        width: 70px;
-        height: 25px;
-        font-size: 12px;
-        border-radius: 10px;
-        margin-bottom: 1px;
-    }
-    .valuation{
-        display: none;
-    }
-    .rec-grid{
-        gap: 5px;
-    }
-    .rec-card{
-        border-radius: 5px;
-        height: 110px;
-        border: none;
-    }
-    .rec-info h3{
-        font-size: 8px;
-        margin-top: -10px;
-    }
-    .rec-info p{
-        display: none;
-    }
-    .rec-info span{
-        display: none;
-    }
-    .btn--black{
-        height: 30px;
-        border-radius: 6px;
-        font-size: 12px;
-    }
-    .secondary-nav-wrapper{
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-    .secondary-nav-wrapper a{
-        font-size: 7px;
-    }
-    .footer{
-        margin-top: 0;
-        padding-bottom: 0;
-    }
-    .footer-content{
-        margin-left: -5px;
-        gap: 5px;
-    }
-    .footer-content{
-        width: 20px;
-    }
-    .footer-block{
-        min-width: 90px;
-    }
-    .footer-block a{
-        font-size: 6px;
-        width: 80px;
-        height: 25px;
-        padding: 0;
-        margin-bottom: 1px;
-    }
-    .footer-info p{
-        font-size: 6px;
-        margin-bottom: -15px;
-        margin-top: -15px;
-    }
-    .footer-row{
-        width: 100%;
-        gap: 0;
-    }
-    .footer-column-left{
-        display: flex;
-        flex-direction: row;
-        width: 70%;
-        height: 25px;
-        gap: 0;
-        flex-wrap: nowrap;
-    }
-    .footer-column-right{
-        display: flex;
-        flex-direction: row;
-        width: 30%;
-        height: 25px;
-        gap: 0;
-    }
-    .footer-products-left{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 5px;
-    }
-    .footer-bottom-part{
-        padding-bottom: 0;
-    }
-    .footer-column-left span{
-        font-size: 5px;
-        width: 20%;
-        margin-top: -15px;
-    }
-    .footer-column-left a{
-        font-size: 5px;
-        width: 40%;
-        margin: 0;
-    }
-    .footer-column-left a:last-child{
-        font-size: 5px;
-        margin: 0;
-    }
-    .social-icons{
-        justify-content: flex-end;
-    }
-    .social-icons a{
-        height: 25px;
-        width: 25px;
-        margin: 0;
-    }
-    .footer-products{
-        padding-top: 0;
-    }
-    .footer-products-left{
-        justify-content: flex-start;
-        width: 60%;
-        height: 10px;
-        margin: 0;
-    }
-    .footer-products-left a{
-        margin: 0;
-        margin-right: 4px;
-        font-size: 6px;
-    }
-    .footer-products-left a:last-child{
-        margin: 0;
-    }
-    .footer-products-right{
-        justify-content: flex-end;
-        width: 40%;
-        height: 10px;
-    }
-    .yandex-brand{
-        height: 20px;
-        position: relative;
-    }
-    .yandex-brand span{
-        font-size: 6px;
-        height: 10px;
-        color: #666666;
-    }
-    .yandex-logo-link img{
-        height: 10px;
-        width: 25px;
-    }
-    .yandex-logo-link a{
-        height: 20px;
-        margin: 0;
-    }
-}
-/* Ноутбуки */
-@media (max-width: 1280px) {
-    body { font-size: 18px; }
-}
-
-/* Большие экраны */
-@media (min-width: 1281px) {
-    body { font-size: 20px; }
 }
