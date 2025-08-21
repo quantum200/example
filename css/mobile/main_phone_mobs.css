@@ -1,3 +1,281 @@
+@media (max-width: 768px){
+    html, body {
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .logo {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .first {
+        display: none;
+    }
+
+    .second {
+        display: none;
+    }
+
+    .third {
+        display: none;
+    }
+
+    .fourth {
+        display: none;
+    }
+
+    .fifth {
+        display: none;
+    }
+
+    .actions .btn--outline {
+        font-size: 10px;
+        margin-bottom: -10px;
+    }
+
+    .actions .btn--primary {
+        text-align: center;
+        font-size: 10px;
+        color: white;
+        width: 140px;
+        margin-bottom: -10px;
+    }
+
+    header .search input {
+        width: 400px;
+        height: 29px;
+    }
+
+    .categories {
+        height: 30px;
+    }
+
+    .categories1{
+        height: 30px;
+    }
+
+    .container a {
+        margin-top: -10px;
+        font-size: 9px;
+    }
+
+    .container1 a{
+        margin-top: -10px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .valuation {
+        display: none;
+    }
+
+    .offer-block {
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: -30px;
+        border-radius: 20px;
+    }
+
+    .offer-block span {
+        font-size: 12px;
+    }
+
+    .offer-block button {
+        font-size: 12px;
+    }
+
+    .recommend-header h1 {
+        font-size: 22px;
+    }
+
+    .recommend-banner {
+        height: 60px;
+        background: #0000001a;
+        padding: 10px 10px;
+    }
+
+    .recommend-banner img {
+        width: 120px;
+    }
+
+    .recommend-banner .banner-text strong {
+        font-size: 14px;
+    }
+
+    .recommend-banner .banner-text p {
+        font-size: 14px;
+    }
+
+    .recommend-banner .btn--black {
+        width: 70px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 10px;
+        margin-bottom: 1px;
+    }
+
+    .secondary-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+    }
+
+    .secondary-nav a {
+        font-size: 12px;
+    }
+
+    .footer{
+        border-top: none;
+        padding: 0;
+    }
+
+    .footer-content {
+        margin-left: -5px;
+        gap: 5px;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .footer-block {
+        min-width: 190px;
+    }
+
+    .footer-block a {
+        font-size: 10px;
+        width: 130px;
+        height: 27px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-info p {
+        font-size: 10px;
+        margin-bottom: -15px;
+        margin-top: -15px;
+    }
+
+    .footer-row {
+        width: 100%;
+        gap: 0;
+    }
+
+    .footer-column-left {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 25px;
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .footer-column-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 30%;
+        height: 25px;
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .footer-products-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .footer-bottom-part {
+        padding-bottom: 0;
+    }
+
+    .footer-column-left span {
+        font-size: 8px;
+        width: 40%;
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+
+    .footer-column-left a {
+        font-size: 8px;
+        width: 40%;
+        margin: 0;
+    }
+
+    .footer-column-left a:last-child {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+
+    .social-icons a {
+        height: 25px;
+        width: 25px;
+        margin: 0;
+    }
+
+    .footer-products {
+        padding-top: 0;
+    }
+
+    .footer-products-left {
+        justify-content: flex-start;
+        width: 60%;
+        height: 10px;
+        margin: 0;
+    }
+
+    .footer-products-left a {
+        margin: 0;
+        margin-right: 4px;
+        font-size: 8px;
+        width: 80px;
+    }
+
+    .footer-products-left a:last-child {
+        margin: 0;
+    }
+
+    .footer-products-right {
+        justify-content: flex-end;
+        width: 40%;
+        height: 10px;
+    }
+
+    .yandex-brand {
+        height: 20px;
+        position: relative;
+    }
+
+    .yandex-brand span {
+        font-size: 6px;
+        height: 10px;
+        color: #666666;
+    }
+
+    .yandex-logo-link img {
+        height: 10px;
+        width: 25px;
+    }
+
+    .yandex-logo-link a {
+        height: 20px;
+        margin: 0;
+    }
+}
+
 @media (max-width: 425px) {
     html, body {
         width: 100%;
@@ -65,18 +343,6 @@
     }
 
     .galleries {
-        display: none;
-    }
-
-    .garazh {
-        display: none;
-    }
-
-    .zhurnal {
-        display: none;
-    }
-
-    .biznes {
         display: none;
     }
 
@@ -251,6 +517,12 @@
         gap: 0;
         width: 75%;
     }
+
+    .footer-column-right {
+        gap: 0;
+        width: 25%;
+    }
+
     .footer-column-left span {
         font-size: 5px;
         width: 20%;
