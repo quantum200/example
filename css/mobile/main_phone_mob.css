@@ -139,6 +139,15 @@
         gap: 5px;
     }
 
+    .brand-images{
+        width: 90%;
+    }
+    .brand-images a img {
+        width: 55px;
+        height: auto;
+        display: block;
+    }
+
     .footer-content {
         width: 100%;
     }
@@ -479,6 +488,33 @@
         font-size: 12px;
     }
 
+    .brand-filters-row{
+        margin: 0;
+    }
+    .brand-filters{
+        width: 40%;
+        height: 20px;
+    }
+    .brand-filters-left,
+    .brand-filters-right{
+        border-radius: 3px;
+        height: 23px;
+        width: 120px;
+    }
+    .filter-btn{
+        width: 33%;
+        font-size: 8px;
+        padding: 0;
+    }
+    .filter-btn.active{
+        text-align: center;
+    }
+    .brand-images a img {
+        width: 24px;
+        height: auto;
+        display: block;
+    }
+
     .footer-content {
         display: flex;
         flex-direction: row;
@@ -641,6 +677,12 @@
         margin-bottom: -13px;
         text-align: center;
     }
+    .brand-images a img {
+        width: 26px;
+        height: auto;
+        display: block;
+    }
+
     .footer {
         margin-top: 0;
         padding-bottom: 0;
@@ -754,6 +796,33 @@
     .recommend-banner .banner-text p {
         font-size: 6px;
         color: black;
+    }
+
+    .brand-filters-row{
+        margin: 0;
+    }
+    .brand-filters{
+        width: 40%;
+        height: 20px;
+    }
+    .brand-filters-left,
+    .brand-filters-right{
+        border-radius: 3px;
+        height: 23px;
+        width: 120px;
+    }
+    .filter-btn{
+        width: 33%;
+        font-size: 8px;
+        padding: 0;
+    }
+    .filter-btn.active{
+        text-align: center;
+    }
+    .brand-images a img {
+        width: 22px;
+        height: auto;
+        display: block;
     }
 
     .footer-products {
@@ -1000,6 +1069,32 @@
         font-size: 7px;
     }
 
+    .brand-filters-row{
+        margin: 0;
+    }
+    .brand-filters{
+        width: 40%;
+        height: 20px;
+    }
+    .brand-filters-left,
+    .brand-filters-right{
+        border-radius: 3px;
+        height: 23px;
+        width: 120px;
+    }
+    .filter-btn{
+        width: 33%;
+        font-size: 8px;
+        padding: 0;
+    }
+    .filter-btn.active{
+        text-align: center;
+    }
+    .brand-images a img {
+        width: 22px;
+        height: auto;
+        display: block;
+    }
     .footer {
         margin-top: 0;
         padding-bottom: 0;
@@ -1221,9 +1316,35 @@
         margin-top: 5px;
         gap: 5px;
     }
-    .brand-item{
+    .brand-item {
         font-size: 6px;
         padding: 0;
+    }
+    .brand-filters-row{
+        margin: 0;
+    }
+    .brand-filters{
+        width: 40%;
+        height: 20px;
+    }
+    .brand-filters-left,
+    .brand-filters-right{
+        border-radius: 3px;
+        height: 20px;
+        width: 90px;
+    }
+    .filter-btn{
+        width: 33%;
+        font-size: 7px;
+        padding: 0;
+    }
+    .filter-btn.active{
+        text-align: center;
+    }
+    .brand-images a img {
+        width: 17px;
+        height: auto;
+        display: block;
     }
     .offer-block{
         margin-left: -10px;
