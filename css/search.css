@@ -451,13 +451,13 @@ main {
 
 
 
-/* Стили для dealer-section (если были пропущены) */
+
 .dealer-section {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px 0;
-    flex-wrap: wrap; /* Для адаптивности на мобильных */
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -500,7 +500,7 @@ main {
 }
 
 .dealer-card:hover .dealer-type {
-    color: #8B0000; /* Темно-красный при наведении */
+    color: #8B0000;
 }
 
 .dealer-cars {

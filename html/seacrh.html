@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авто.ру: — Поиск</title>
     <link rel="stylesheet" href="../css/search.css">
-    <link rel="stylesheet" href="../css/search_phone.css">
+    <link rel="stylesheet" href="../css/mobile/search_phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <div class="container topbar__inner">
         <div class="logo">auto.ru</div>
         <div class="search">
-            <input type="text" placeholder="Поиск по объявлениям">
+            <input type="text" placeholder="Поиск">
         </div>
         <div class="actions">
             <a href="#" class = "first">Избранное</a>
@@ -40,14 +40,15 @@
         <a href="#">Кредиты</a>
         <a href="#">Оценка авто</a>
         <a href="#">Страховки</a>
-        <a href="#">Гараж</a>
-        <a href="#">Журнал</a>
-        <a href="#">Для бизнеса</a>
+        <a href="#" class = "garazh">Гараж</a>
+        <a href="#" class = "zhurnal">Журнал</a>
+        <a href="#" class = "biznes">Для бизнеса</a>
     </div>
 </div>
 
 <nav class="categories">
     <div class="container">
+        <h1>Купить автомобиль</h1>
         <div class="filter-row-top">
             <a href="#" class="filter-link active">Все</a>
             <a href="#" class="filter-link">Новое</a>
@@ -219,7 +220,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="filter-row filter-row-top" style="display: flex; gap: 10px; flex-wrap: nowrap; overflow-x: auto; background: #e0e0e0; padding: 5px; border-radius: 20px; width: 100%; min-width: 0; flex: 1 1 auto;">
+                        <div class="filter-row filter-row-top" style="display: flex; gap: 10px; flex-wrap: nowrap; overflow-x: auto; background: #e0e0e0; padding: 5px; border-radius: 10px; width: 100%; min-width: 0; flex: 1 1 auto;">
                             <span>Неважно</span>
                             <span>Частник</span>
                             <span>Компания</span>
@@ -1113,7 +1114,7 @@
         <div class="category-row">
             <a href="#" class="category-item">
                 <img src="../assets/icons/lada.png" alt="Logo 7" class="category-logo">
-                <span class="category-name">Lada (BAЗ)</span>
+                <span class="category-name">Lada</span>
                 <span class="category-count">12874</span>
             </a>
             <a href="#" class="category-item">
@@ -1380,7 +1381,7 @@
         </div>
     </div>
     <div class="dealer-card">
-        <img src="https://via.placeholder.com/150?text=Автохаб" alt="Автохаб" class="dealer-image">
+        <img src="https://via.placeholder.com/150?text=Автохаб" alt="Xаб" class="dealer-image">
         <div class="dealer-info">
             <div class="dealer-name">Автохаб</div>
             <div class="dealer-type">Салон</div>
