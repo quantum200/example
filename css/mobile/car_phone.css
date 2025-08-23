@@ -2,27 +2,35 @@
     .first {
         display: none;
     }
+
     .second {
         display: none;
     }
+
     .third {
         display: none;
     }
+
     .fourth {
         display: none;
     }
+
     .fifth {
         display: none;
     }
-    .garazh{
+
+    .garazh {
         display: none;
     }
-    .zhurnal{
+
+    .zhurnal {
         display: none;
     }
-    .biznes{
+
+    .biznes {
         display: none;
     }
+
     html, body {
         width: 100%;
         min-width: 100%;
@@ -30,9 +38,6 @@
         padding: 0;
         box-sizing: border-box;
         overflow-x: hidden;
-    }
-    main {
-        padding-bottom: 20px;
     }
     header .logo {
         font-size: 15px;
@@ -68,187 +73,206 @@
         line-height: 10px;
         color: white;
     }
-    .categories {
-        height: 30px;
-    }
     .container a {
         margin-top: -10px;
         font-size: 6px;
         line-height: 21px;
     }
-    .credit-left {
-        margin-top: 0;
-        margin-left: 0;
-    }
-    .credit-section {
-        flex-direction: row;
-        width: 100%;
-        padding: 10px;
-        gap: 10px;
-    }
-    .credit-section1 {
-        padding: 10px;
-    }
-    .credit-left {
-        margin-top: 20px;
-        padding-left: 0;
-        gap: 10px;
-        align-items: center;
+    .categories1 .container1 {
+        margin-top: -10px;
+        height: 20px;
         text-align: center;
     }
-    .credit-icon {
-        width: 50px;
+    .categories1 {
+        height: 20px;
+    }
+    .categories1 a {
+        text-align: center;
+        height: 10px;
+        margin-top: -3px;
+        font-size: 6px;
+    }
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .car-details {
+        width: 100%;
+    }
+    .car-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .car-title {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .car-meta {
+        font-size: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .car-price {
+        font-size: 18px;
+    }
+    .seller-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+    .seller-photo {
+        width: 40px;
+        height: 40px;
+    }
+    .seller-name, .seller-city {
+        font-size: 14px;
+    }
+    .seller-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .btn-write, .btn-show-phone {
+        font-size: 12px;
+        padding: 8px;
+        flex: 1;
+        text-align: center;
+    }
+    .car-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .info-column,
+    .gallery-column {
+        max-width: 100%;
+        flex: 1;
+    }
+    .main-gallery {
+        max-height: 250px;
+    }
+    .thumbnail {
+        width: calc(33.33% - 4px);
+        height: 70px;
+    }
+    .section-title {
+        font-size: 16px;
+    }
+    .detail-item,
+    .spec-label,
+    .spec-value {
+        font-size: 12px;
+    }
+    .car-history-block {
+        gap: 8px;
+    }
+    .history-text strong {
+        font-size: 14px;
+    }
+    .history-subtext {
+        font-size: 10px;
+    }
+    .history-icon {
+        width: 80px;
+        height: 30px;
+    }
+    .report-columns {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .report-text h3 {
+        font-size: 14px;
+    }
+    .report-text .report-subtext {
+        font-size: 11px;
+    }
+    .report-button .btn--primary {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .comment-title {
+        font-size: 16px;
+    }
+    .comment-text {
+        font-size: 12px;
+        width: 100%;
+    }
+    .ask-seller-input input {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px;
+    }
+    .credit-logo {
+        width: 120px;
     }
     .credit-title {
         font-size: 16px;
     }
-    .credit-subtitle {
-        font-size: 12px;
-        line-height: 1.3;
-    }
-    .credit-right {
-        margin-top: 15px;
-    }
-    .credit-block {
-        padding: 15px;
-        margin: 15px auto;
-        left: 0;
-        box-shadow: none;
-        width: 95%;
-    }
-    .credit-header {
-        margin-bottom: 10px;
-    }
-    .credit-logo {
-        max-width: 70px;
-    }
-    .credit-title--block {
-        font-size: 16px;
-    }
-    .credit-subtitle--block {
-        font-size: 12px;
-        margin-bottom: 15px;
-    }
     .credit-columns {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
-    .credit-left-column,
-    .credit-right-column {
-        flex: 1;
-        box-shadow: none;
-        padding: 10px 0;
+    .credit-left,
+    .credit-right {
+        width: 100%;
     }
-    .credit-label {
-        font-size: 9px;
-    }
+    .credit-label,
     .credit-value {
         font-size: 12px;
     }
-    input[type="range"] {
-        height: 20px;
+    .secondary-nav-wrapper {
+        padding: 10px 0;
     }
-    .credit-details {
-        flex-direction: column;
-        margin-left: 0;
-        gap: 8px;
-    }
-    .credit-input input {
-        padding: 8px;
-        font-size: 12px;
-    }
-    .credit-button .btn--black {
-        font-size: 12px;
-        padding: 8px;
-    }
-    .credit-agreement {
-        font-size: 10px;
-        line-height: 1.3;
-    }
-    .how-it-works {
-        width: 100%;
-        padding-left: 10px;
-        margin-top: 20px;
-        gap: 8px;
-    }
-    .how-title {
-        font-size: 16px;
-        padding-left: 5px;
-    }
-    .how-subtitle {
-        font-size: 10px;
-        line-height: 1.3;
-        padding-left: 5px;
-        width: 95%;
-    }
-    .how-steps {
-        flex-direction: column;
+    .secondary-nav {
         gap: 10px;
-        padding-left: 0;
-        align-items: center;
-        margin-top: 10px;
-        width: 95%;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .step-item {
-        max-width: 100%;
+    .secondary-nav a {
+        font-size: 12px;
+    }
+    .reviews-block {
         padding: 10px;
-        text-align: center;
     }
-    .step-item:first-child {
-        width: 100% !important;
-    }
-    .step-image {
-        width: 50px;
-        margin-bottom: 5px;
-    }
-    .step-text {
-        font-size: 12px;
-        text-align: center;
-    }
-    .how-subheader {
-        font-size: 14px;
-        margin-top: 15px;
-        padding-left: 5px;
-    }
-    .how-options {
+    .reviews-rating {
         flex-direction: row;
-        gap: 10px;
-        padding-left: 0;
-        align-items: center;
-        width: 95%;
+        align-items: flex-start;
+        gap: 5px;
     }
-    .option-item {
-        max-width: 100%;
-        padding: 5px;
+    .rating-score {
+        font-size: 20px;
     }
-    .option-image {
-        width: 30px;
-        margin: 0;
-    }
-    .option-text {
-        font-size: 10px;
-    }
-    .bank-rate {
-        font-size: 8px;
-    }
-    .faq-section {
-        width: 90%;
-        padding-left: 10px;
-        margin-top: 20px;
-    }
-    .faq-title {
+    .rating-stars .star {
         font-size: 16px;
-        margin-bottom: 10px;
     }
-    .faq-question {
+    .reviews-columns {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .reviews-summary h3 {
+        font-size: 14px;
+        color: rgba(234, 23, 208, 0.55);
+    }
+    .summary-section p {
         font-size: 12px;
     }
-    .faq-answer {
-        font-size: 12px;
+    .review-card {
+        padding: 10px;
+        font-size: 13px;
     }
-    .faq-disclaimer {
-        font-size: 10px;
-        margin-top: 15px;
+    .review-title {
+        font-size: 14px;
+    }
+    .review-text {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    .review-avatar {
+        width: 32px;
+        height: 32px;
+    }
+    .user-name {
+        font-size: 13px;
     }
     .footer-bottom-container {
         display: flex;
@@ -256,6 +280,9 @@
         gap: 5px;
         align-items: center;
         text-align: center;
+    }
+    .footer-text-column{
+        font-size: 8px;
     }
     .footer-row {
         flex-direction: row;
@@ -305,21 +332,6 @@
     }
 }
 
-
-@media (min-width: 376px) and (max-width: 400px){
-    header .search input[type="text"]{
-        width: 160px;
-        height: 20px;
-        margin-right: 5px;
-    }
-    .container a {
-        margin-top: -10px;
-        font-size: 5px;
-        line-height: 21px;
-    }
-}
-
-
 @media (max-width: 375px){
     header .search input[type="text"]{
         width: 150px;
@@ -331,10 +343,12 @@
         font-size: 5px;
         line-height: 21px;
     }
+    .secondary-nav a{
+        font-size: 14px;
+    }
 }
 
-
-@media (max-width: 320px){
+@media (max-width: 320px) {
     header .search input[type="text"]{
         width: 100px;
         height: 20px;
@@ -344,5 +358,8 @@
         margin-top: -10px;
         font-size: 4px;
         line-height: 21px;
+    }
+    .secondary-nav a{
+        font-size: 12px;
     }
 }
