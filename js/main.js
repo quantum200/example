@@ -4,3 +4,8 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.add('active');
     });
 });
+
+document.querySelector('.burger-menu').addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.querySelector('.actions').classList.toggle('active');
+});

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авто.ру: — Главная</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mobile/main_phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +14,21 @@
 
 <header class="topbar">
     <div class="container topbar__inner">
-        <div class="logo">auto.ru</div>
+        <div class="burger-menu">
+            <img src="assets/icons/menu_line.png" alt="Menu" class="burger-img">
+        </div>
+        <div class="logo">
+            <img src="assets/icons/autoru.png" alt="Auto.ru Logo" class="logo-img">
+        </div>
         <div class="search">
             <input type="text" placeholder="Поиск">
         </div>
         <div class="actions">
-            <a href="#" class = "first">Избранное</a>
-            <a href="#" class = "second">Поиски</a>
-            <a href="#" class = "third">Сравнения</a>
-            <a href="#" class = "fourth">Сообщения</a>
-            <a href="#" class = "fifth">Я продаю</a>
+            <a href="#" class="first">Избранное</a>
+            <a href="#" class="second">Поиски</a>
+            <a href="#" class="third">Сравнения</a>
+            <a href="#" class="fourth">Сообщения</a>
+            <a href="#" class="fifth">Я продаю</a>
             <a href="html/car.html" class="btn btn--outline">Войти</a>
             <a href="html/finance.html" class="btn btn--primary">Разместить объявление</a>
         </div>
@@ -597,5 +601,6 @@
 </footer>
 
 <script src="/js/main.js"></script>
+<script src="/js/main_phone.js"></script>
 </body>
 </html>

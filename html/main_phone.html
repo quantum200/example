@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/mobile/main_phone.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <title>Авто.ру: — Главная</title>
+</head>
+<body>
+<header>
+  <div class="header-top">
+    <div class="logo">
+      <img src="/assets/icons/autoru.png" alt="Logo">
+    </div>
+    <div class="burger-menu" onclick="toggleMenu()">
+      <img src="/assets/icons/menu_line.png" alt="Burger Menu">
+    </div>
+  </div>
+
+  <nav class="menu" id="menu">
+    <div class="menu-header">
+      <div class="menu-input-container" onclick="openSearchMenu()">
+        <input type="text" placeholder="Поиск">
+      </div>
+      <div class="menu-close">
+        <img src="/assets/icons/close_line.png" alt="Close Icon" onclick="toggleMenu()">
+      </div>
+    </div>
+    <ul>
+      <li><a href="#">Войти</a></li>
+      <li><a href="#">Мои объявления</a></li>
+      <li><a href="#">Настройка уведомлений</a></li>
+      <li><a href="#">Избранное</a></li>
+      <li><a href="#">Сохранённые поиски</a></li>
+      <li><a href="#">Сообщения</a></li>
+      <li><a href="#">Промокоды</a></li>
+      <li>
+        <a href="#">Оценка авто</a>
+        <div class="new-badge">Новое</div>
+      </li>
+      <li><a href="#">Китайские</a></li>
+      <li><a href="#">Электро⚡</a></li>
+      <li><a href="#">Подбор авто</a></li>
+      <li><a href="#">Заявки на кредит</a></li>
+      <li><a href="#">Гараж</a></li>
+      <li><a href="#">Бортжурнал</a></li>
+      <li><a href="#">Отчёты</a></li>
+      <li>
+        <a href="#">Разместить объявление</a>
+        <button class="add-button">+</button>
+      </li>
+    </ul>
+    <div class="menu-divider"></div>
+    <div class="menu-brand">JETOUR</div>
+    <div class="menu-grid">
+      <div class="grid-column left">
+        <a href="#">Легковые</a>
+        <a href="#">Коммерческие</a>
+        <a href="#">Мото</a>
+        <a href="#">Дилеры</a>
+        <a href="#">Каталог</a>
+        <a href="#">Полная версия</a>
+      </div>
+      <div class="grid-column right">
+        <a href="#">Отзывы</a>
+        <a href="#">Журнал</a>
+        <a href="#">Учебник</a>
+        <a href="#">Страховки</a>
+        <a href="#">Саша Котов</a>
+      </div>
+    </div>
+    <div class="menu-images">
+      <div class="image-item" style="background-image: url('/assets/icons/vkontakte_line.png');"></div>
+      <div class="image-item" style="background-image: url('/assets/icons/odnokl1.png');"></div>
+      <div class="image-item" style="background-image: url('/assets/icons/youtube_line.png');"></div>
+    </div>
+    <div class="menu-footer">ООО «Сервисы размещения объявлений»</div>
+  </nav>
+
+  <div class="search-menu" id="search-menu">
+    <div class="search-header">
+      <div class="search-input-container">
+        <input type="text" placeholder="">
+      </div>
+      <button class="cancel-button" onclick="returnToMenu()">Отменить</button>
+    </div>
+    <div class="popular-searches">
+      <h3>Популярные запросы</h3>
+      <ul>
+        <li><a href="#">Купить седан до 1 млн</a></li>
+        <li><a href="#">Кроссоверы с пробегом</a></li>
+        <li><a href="#">Электромобили Tesla</a></li>
+        <li><a href="#">Мотоциклы Yamaha</a></li>
+        <li><a href="#">Коммерческие фургоны</a></li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+<div class="image-blocks">
+  <div class="image-block" style="background-image: url('/assets/icons/new.png');">
+    <p>Новые автомобили</p>
+  </div>
+  <div class="image-block" style="background-image: url('/assets/icons/car1.png');">
+    <p>Узнайте, сколько стоит ваша машина</p>
+  </div>
+</div>
+
+<div class="scrollable-buttons">
+  <a href="#">Транспорт</a>
+  <a href="#">Отчеты</a>
+  <a href="#">Кредиты</a>
+  <a href="#">Подбор авто</a>
+  <a href="#">Оценка авто</a>
+  <a href="#">Страховки</a>
+  <a href="#">Гараж</a>
+  <a href="#">Электромобили</a>
+  <a href="#">Журнал</a>
+  <a href="#">Видео</a>
+  <a href="#">Отзывы и статьи в Бортжурнале</a>
+</div>
+
+<div class="input-container">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="11" cy="11" r="8" />
+    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+  </svg>
+  <input type="text" placeholder="Поиск">
+</div>
+
+<div class="dropdown">
+  <div class="dropdown-toggle" onclick="toggleDropdown()">
+    <img src="/assets/icons/settings_6_line.png" alt="Icon">
+    <span>Параметры</span>
+  </div>
+  <div class="dropdown-content" id="dropdown-content">
+    <div class="dropdown-header">
+      <div class="dropdown-close">
+        <img src="/assets/icons/close_line1.png" alt="Close Icon" onclick="toggleDropdown()">
+      </div>
+      <span>Параметры</span>
+      <button class="reset-button" onclick="resetSelection()">Сбросить</button>
+    </div>
+    <div class="switcher">
+      <div class="switcher-item active" data-type="passenger" onclick="selectType('passenger')">Легковые</div>
+      <div class="switcher-item" data-type="commercial" onclick="selectType('commercial')">Комтранс</div>
+      <div class="switcher-item" data-type="moto" onclick="selectType('moto')">Мото</div>
+    </div>
+    <div class="filter-buttons">
+      <button class="filter-button" data-filter="all">Все</button>
+      <button class="filter-button" data-filter="new" onclick="showContent('new')">Новые</button>
+      <button class="filter-button" data-filter="used" onclick="showContent('used')">С пробегом</button>
+    </div>
+    <div class="filter-content" id="filter-content">
+      <div class="content all used">
+        <div class="select-container" onclick="openRegionMenu()">
+          <img src="/assets/icons/region.png" alt="Region Icon">
+          <span class="select-main">Москва</span>
+          <span class="select-text">+200 км</span>
+          <img src="/assets/icons/right_line.png" alt="Arrow Icon">
+        </div>
+      </div>
+      <div class="content new" style="display: none;">
+        <p>Новые автомобили</p>
+      </div>
+    </div>
+  </div>
+  <div class="region-menu" id="region-menu">
+    <div class="region-header">
+      <img src="/assets/icons/back.png" alt="Back Icon" onclick="returnToDropdown()">
+      <span>Выбрано 0</span>
+      <button class="region-reset-button">Сбросить</button>
+    </div>
+    <div class="region-input-container">
+      <input type="text" placeholder="Населённый пункт">
+      <img src="/assets/icons/search.png" alt="Search Icon">
+    </div>
+    <div class="region-all">Все регионы</div>
+    <button class="apply-button">Применить</button>
+  </div>
+  <div class="region-menu" id="region-menu">
+    <div class="region-header">
+      <img src="/assets/icons/back.png" alt="Back Icon" onclick="returnToDropdown()">
+      <span>Выбрано 0</span>
+      <button class="region-reset-button">Сбросить</button>
+    </div>
+    <div class="region-input-container">
+      <input type="text" placeholder="Населённый пункт">
+      <img src="/assets/icons/search.png" alt="Search Icon">
+    </div>
+    <div class="region-all">Все регионы</div>
+    <button class="apply-button">Применить</button>
+  </div>
+</div>
+
+
+<div class="recommendations">
+  <div class = "rec-wrapper">
+    <div class="rec-header">
+      <img src="/assets/icons/znak.png" alt="icon">
+      <h2>Рекомендации</h2>
+    </div>
+
+    <div class="rec-grid">
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/first.png" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>1 200 000 ₽</h3>
+          <p>Toyota Camry</p>
+          <span class="rating">2020 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/second.png" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>950 000 ₽</h3>
+          <p>Kia Rio</p>
+          <span class="rating">2019 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/third.jpeg" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>1 250 000 ₽</h3>
+          <p>Hyundai Solaris</p>
+          <span class="rating">2020 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/fourth.jpg" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>2 100 000 ₽</h3>
+          <p>Toyota Camry</p>
+          <span class="rating">2021 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/fiveth.png" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>3 600 000 ₽</h3>
+          <p>BMW 5 Series</p>
+          <span class="rating">2018 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/six.jpg" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>4 200 000 ₽</h3>
+          <p>Audi A6</p>
+          <span class="rating">2022 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/seven.jpg" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>1 800 000 ₽</h3>
+          <p>Mazda 6</p>
+          <span class="rating">2017 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/eight.jpg" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>5 500 000 ₽</h3>
+          <p>Mercedes E-Class</p>
+          <span class="rating">2020 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/nine.jpg" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>850 000 ₽</h3>
+          <p>Lada Vesta</p>
+          <span class="rating">2021 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/ten.jpg" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>6 800 000 ₽</h3>
+          <p>Lexus RX</p>
+          <span class="rating">2019 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/first.png" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>7 900 000 ₽</h3>
+          <p>Porsche Cayenne</p>
+          <span class="rating">2022 г.</span>
+        </div>
+      </div>
+
+      <div class="rec-card">
+        <div class="rec-img">
+          <img src="/assets/images/main/second.png" alt="car">
+          <div class="rec-top">
+            <span class="badge badge-green">Новый</span>
+            <span class="badge badge-black">На заказ</span>
+            <div class="heart">
+              <img src="/assets/icons/heart_line.png" alt="heart">
+            </div>
+          </div>
+        </div>
+        <div class="rec-info">
+          <h3>9 500 000 ₽</h3>
+          <p>Tesla Model S</p>
+          <span class="rating">2021 г.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="popular-brands">
+    <div class="popular-title">Популярные марки автомобилей</div>
+    <div class="brands-columns">
+      <div class="brands-left"></div>
+      <div class="brands-right"></div>
+    </div>
+    <div class="show-all-container">
+      <span class="show-all">Показать все  - 200</span>
+    </div>
+
+    <div class="grid-block">
+      <div class="grid-column left-column">
+        <div>Автомобили с пробегом</div>
+        <div>Каталог</div>
+        <div>Дилеры</div>
+        <div>Иномарки</div>
+        <div>Автомобили в кредит</div>
+      </div>
+      <div class="grid-column right-column">
+        <div>Новые автомобили</div>
+        <div>Отзывы</div>
+        <div>Видео обзоры</div>
+        <div>Отечественные автомобили</div>
+      </div>
+    </div>
+    <div class="grid-block grid-block-border">
+      <div class="grid-column left-column">
+        <div>Для Бизнеса</div>
+        <div>Помощь</div>
+        <div>Саша Котов</div>
+        <div>Полная версия</div>
+        <div>Правила рекомендаций</div>
+      </div>
+      <div class="grid-column right-column">
+        <div>О проекте</div>
+        <div>Аналитика Авто.ру</div>
+        <div>Приложение Авто.ру</div>
+        <div>Стань частью команды</div>
+      </div>
+    </div>
+
+    <div class="cities-block">
+      <h3>Популярные города</h3>
+      <div class="cities-columns">
+        <div class="cities-left">
+          <div class="city">Москва и Московская область</div>
+          <div class="city">Санкт-Петербург</div>
+          <div class="city">Волгоград</div>
+          <div class="city">Екатеринбург</div>
+          <div class="city">Казань</div>
+          <div class="city">Кострома</div>
+          <div class="city hidden">Тула</div>
+          <div class="city hidden">Ярославль</div>
+          <div class="city hidden">Тверь</div>
+          <div class="city hidden">Новосибирск</div>
+          <div class="city hidden">Самара</div>
+          <div class="city hidden">Ростов-на-Дону</div>
+          <div class="city hidden">Краснодар</div>
+        </div>
+        <div class="cities-right">
+          <div class="city">Москва</div>
+          <div class="city">Владимир</div>
+          <div class="city">Воронеж</div>
+          <div class="city">Иваново</div>
+          <div class="city">Калуга</div>
+          <div class="city hidden">Липецк</div>
+          <div class="city hidden">Пенза</div>
+          <div class="city hidden">Саратов</div>
+          <div class="city hidden">Орёл</div>
+          <div class="city hidden">Курск</div>
+          <div class="city hidden">Рязань</div>
+          <div class="city hidden">Уфа</div>
+
+          <div class="cities-buttons">
+            <div class="show-toggle">Показать все</div>
+            <div class="hide-toggle" style="display:none;">Скрыть</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-block">
+      <div class="footer-info">
+        <p>Авто.ру — один из самых посещаемых автомобильных сайтов в российском интернете</p>
+        <p>Мы предлагаем большой выбор легковых автомобилей, грузового и коммерческого транспорта, мототехники, спецтехники и многих других видов транспортных средств</p>
+        <p>ООО «Сервисы размещения объявлений»</p>
+      </div>
+
+      <div class="footer-tags">
+        <span>Недвижемость</span>
+        <span>Аренда</span>
+        <span>Путешествия</span>
+        <span>Расписания</span>
+        <span>Услуги</span>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-left">Проект компании</span>
+        <span class="footer-right">
+      <img src="/assets/icons/yandex.png" alt="Logo">
+    </span>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<script src="/js/main_phone.js"></script>
+</body>
+</html>
