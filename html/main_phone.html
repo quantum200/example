@@ -3,12 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/html/">
+  <title>Авто.ру: — Главная</title>
   <link rel="stylesheet" href="/css/mobile/main_phone.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-  <title>Авто.ру: — Главная</title>
+  <script>
+    function checkScreenSize() {
+      const width = window.innerWidth;
+
+      // Если ширина <= 425 и мы НЕ на main_phone.html → редиректим туда
+      if (width <= 425 && !window.location.pathname.includes("main_phone.html")) {
+        window.location.href = "main_phone.html";
+      }
+
+      // Если ширина >= 426 и мы НЕ на index.html → редиректим туда
+      if (width >= 426 && !window.location.pathname.includes("index.html")) {
+        window.location.href = "index.html";
+      }
+    }
+
+    // Проверяем сразу при загрузке
+    checkScreenSize();
+
+    // Проверяем при изменении размера окна
+    window.addEventListener("resize", checkScreenSize);
+  </script>
 </head>
 <body>
 <header>
