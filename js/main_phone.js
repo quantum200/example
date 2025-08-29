@@ -1,7 +1,31 @@
+let isInteracting = false;
+
+function redirectToDeviceVersion() {
+    if (isInteracting) return;
+    const width = window.innerWidth;
+    if (width < 425) {
+        if (window.location.pathname !== '/main_phone.html') {
+            window.location.href = '/main_phone.html';
+        }
+    } else {
+        if (window.location.pathname !== '/index.html') {
+            window.location.href = '/index.html';
+        }
+    }
+}
+
+window.onload = redirectToDeviceVersion;
+window.onresize = () => {
+    if (!isInteracting) {
+        setTimeout(redirectToDeviceVersion, 300);
+    }
+};
+
 function toggleMenu() {
     const menu = document.getElementById('menu');
     menu.classList.toggle('active');
 }
+
 function toggleDropdown() {
     const content = document.getElementById('dropdown-content');
     content.classList.toggle('active');
@@ -47,21 +71,23 @@ function showContent(filter) {
 function openRegionMenu() {
     const regionMenu = document.getElementById('region-menu');
     const dropdownContent = document.getElementById('dropdown-content');
-    dropdownContent.classList.remove('active');
-    regionMenu.classList.add('active');
+    if (regionMenu && dropdownContent) {
+        dropdownContent.classList.remove('active');
+        regionMenu.classList.add('active');
+    }
 }
 
 function returnToDropdown() {
     const regionMenu = document.getElementById('region-menu');
     const dropdownContent = document.getElementById('dropdown-content');
-    regionMenu.classList.remove('active');
-    dropdownContent.classList.add('active');
+    if (regionMenu && dropdownContent) {
+        regionMenu.classList.remove('active');
+        dropdownContent.classList.add('active');
+    }
 }
 
-
-
 const allBrands = [
-    "BMW","Lada (BAЗ)","Toyota","Hyundai","Mercedes-Benz","Kia","Volkswagen","Ford","Nissan",
+    "BMW","Lada","Toyota","Hyundai","Mercedes-Benz","Kia","Volkswagen","Ford","Nissan",
     "Honda","Chevrolet","Audi","Peugeot","Renault","Mazda","Mitsubishi","Subaru","Suzuki","Jeep",
     "Chery","Opel","Fiat","Skoda","Citroen","Dodge","Infiniti","Lexus","Cadillac","Porsche",
     "Jaguar","Land Rover","Mini","Tesla","Volvo","Acura","Buick","Chrysler","GMC","Lincoln",
@@ -111,8 +137,6 @@ document.querySelector('.show-all').addEventListener('click', () => {
     document.querySelector('.show-all').style.display = 'none';
 });
 
-
-
 const showBtn = document.querySelector('.show-toggle');
 const hideBtn = document.querySelector('.hide-toggle');
 showBtn.addEventListener('click', () => {
@@ -128,8 +152,6 @@ hideBtn.addEventListener('click', () => {
     showBtn.style.display = 'block';
 });
 
-
-
 function openSearchMenu() {
     const searchMenu = document.getElementById('search-menu');
     const menu = document.getElementById('menu');
@@ -142,4 +164,32 @@ function returnToMenu() {
     const menu = document.getElementById('menu');
     searchMenu.classList.remove('active');
     menu.classList.add('active');
+}
+
+function openReportMenu(event) {
+    event.preventDefault();
+    isInteracting = true;
+    setTimeout(() => { isInteracting = false; }, 500);
+    const reportMenu = document.getElementById('report-menu');
+    const dropdownContent = document.getElementById('dropdown-content');
+    if (reportMenu && dropdownContent) {
+        dropdownContent.classList.remove('active');
+        reportMenu.classList.add('active');
+    }
+}
+
+function returnToReport() {
+    const reportMenu = document.getElementById('report-menu');
+    const dropdownContent = document.getElementById('dropdown-content');
+    if (reportMenu && dropdownContent) {
+        reportMenu.classList.remove('active');
+        dropdownContent.classList.add('active');
+    }
+}
+
+function closeReportMenu() {
+    const reportMenu = document.getElementById('report-menu');
+    if (reportMenu) {
+        reportMenu.classList.remove('active');
+    }
 }

@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function initUI() {
-        // фильтры
         document.querySelectorAll(".filter-btn").forEach((btn) => {
             btn.addEventListener("click", () => {
                 document
@@ -45,11 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.classList.add("active");
             });
         });
-
-        // бургер-меню
         const burger = document.querySelector(".burger-menu");
         const actions = document.querySelector(".actions");
-
         if (burger && actions) {
             burger.addEventListener("click", function () {
                 this.classList.toggle("active");
@@ -57,8 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
-
-    // первый запуск
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
 });

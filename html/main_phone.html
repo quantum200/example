@@ -11,22 +11,14 @@
   <script>
     function checkScreenSize() {
       const width = window.innerWidth;
-
-      // Если ширина <= 425 и мы НЕ на main_phone.html → редиректим туда
       if (width <= 425 && !window.location.pathname.includes("main_phone.html")) {
         window.location.href = "main_phone.html";
       }
-
-      // Если ширина >= 426 и мы НЕ на index.html → редиректим туда
       if (width >= 426 && !window.location.pathname.includes("index.html")) {
         window.location.href = "index.html";
       }
     }
-
-    // Проверяем сразу при загрузке
     checkScreenSize();
-
-    // Проверяем при изменении размера окна
     window.addEventListener("resize", checkScreenSize);
   </script>
 </head>
@@ -123,7 +115,7 @@
 </header>
 
 <div class="image-blocks">
-  <div class="image-block" style="background-image: url('assets/icons/new.png');">
+  <div class="image-block" style="background-image: url('/assets/icons/carlogo.jpg');">
     <p>Новые автомобили</p>
   </div>
   <div class="image-block" style="background-image: url('/assets/icons/car1.png');">
@@ -179,39 +171,56 @@
     <div class="filter-content" id="filter-content">
       <div class="content all used">
         <div class="select-container" onclick="openRegionMenu()">
-          <img src="/assets/icons/region.png" alt="Region Icon">
-          <span class="select-main">Москва</span>
-          <span class="select-text">+200 км</span>
+          <div class="left-side">
+            <img src="/assets/icons/navigation_line.png" alt="Region Icon">
+            <span class="select-main">Выбрать регион</span>
+          </div>
           <img src="/assets/icons/right_line.png" alt="Arrow Icon">
+        </div>
+        <div class="report-filter-container" onclick="openReportMenu()">
+          <div class="left-side">
+            <img src="/assets/icons/checkbox_line.png" alt="Report Icon">
+            <div class="filter-text">
+              <span class="filter-title">Фильтры по Отчётам</span>
+              <span class="filter-subtitle">Выбрать параметры</span>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="free-block">Бесплатно</div>
+            <img src="/assets/icons/right_line.png" alt="Arrow Icon">
+          </div>
         </div>
       </div>
       <div class="content new" style="display: none;">
         <p>Новые автомобили</p>
       </div>
     </div>
+    <div class="report-menu" id="report-menu">
+      <div class="menu-header">
+        <img src="/assets/images/report_image.png" alt="Report Image" style="width: 50%;">
+        <span class="reset-text">Сбросить</span>
+        <img src="/assets/icons/close_icon.png" alt="Close Icon" class="close-icon" onclick="closeReportMenu()">
+      </div>
+      <h2>Бесплатная строка</h2>
+      <div class="checkbox-container">
+        <div class="checkbox-item"><span>Без ДТП</span><input type="checkbox"></div>
+        <div class="checkbox-item"><span>Параметры совпадают с ПТС</span><input type="checkbox"></div>
+        <div class="checkbox-item"><span>Владельцы совпадают с ПТС</span><input type="checkbox"></div>
+        <div class="checkbox-item"><span>Нет юридических ограничений</span><input type="checkbox"></div>
+      </div>
+      <button class="apply-button">Применить</button>
+    </div>
   </div>
+
   <div class="region-menu" id="region-menu">
     <div class="region-header">
-      <img src="/assets/icons/back.png" alt="Back Icon" onclick="returnToDropdown()">
-      <span>Выбрано 0</span>
+      <img src="/assets/icons/close_line.png" alt="Back Icon" onclick="returnToDropdown()">
+      <span>Регион</span>
       <button class="region-reset-button">Сбросить</button>
     </div>
     <div class="region-input-container">
       <input type="text" placeholder="Населённый пункт">
-      <img src="/assets/icons/search.png" alt="Search Icon">
-    </div>
-    <div class="region-all">Все регионы</div>
-    <button class="apply-button">Применить</button>
-  </div>
-  <div class="region-menu" id="region-menu">
-    <div class="region-header">
-      <img src="/assets/icons/back.png" alt="Back Icon" onclick="returnToDropdown()">
-      <span>Выбрано 0</span>
-      <button class="region-reset-button">Сбросить</button>
-    </div>
-    <div class="region-input-container">
-      <input type="text" placeholder="Населённый пункт">
-      <img src="/assets/icons/search.png" alt="Search Icon">
+      <img src="/assets/icons/navigation_line1.png" alt="Search Icon">
     </div>
     <div class="region-all">Все регионы</div>
     <button class="apply-button">Применить</button>
@@ -554,6 +563,7 @@
 
 
 
+<script src="/js/main.js"></script>
 <script src="/js/main_phone.js"></script>
 </body>
 </html>
